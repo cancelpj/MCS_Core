@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> MCSmain</TITLE>
+<META HTTP-EQUIV=”Pragma” CONTENT=”no-cache”>
+<META HTTP-EQUIV=”Cache-Control” CONTENT=”no-cache”>
+<META HTTP-EQUIV=”Expires” CONTENT=”0”>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link href="style.css" rel="stylesheet" type="text/css">
+<!--script src="../scripts/MdiWin.js"></script-->
+<style>
+<!-- 
+.wintitle{
+	position:relative;
+	left:-10px;
+	z-index:0;
+	background: url(../images/tab1.gif);
+	background-repeat: no-repeat;
+	width:150px;
+	height:25px;
+	padding-left:15px;
+	padding-top:4px;
+	cursor:default;
+}
+.win1{
+	width:100%; 
+	height:100%; 
+}
+.win{
+	position:absolute; 
+	width:100%; 
+	height:100%; 
+	left: 15px; 
+	top: 40px;
+}
+.close{
+	border:1pt solid red;
+	width:15px;
+	height:15px;
+	cursor:hand;
+}
+-->
+</style>
+
+</HEAD>
+
+<BODY leftmargin=0 topmargin=0 onload="init()" scroll="no">
+<TABLE height="100%" width="100%" border=0 cellspacing=0 cellpadding=0 onselectstart="return false" style="table-layout: fixed">
+	<TR height="25" bgcolor="#6E8ADE" >
+		<TD valign="bottom" nowrap><div style="overflow:hidden;width:100%"><div id="titlelist" style="margin-left:0;z-index:-1"></div></div></TD>
+ 		<TD width="25" style="color:#FFFFFF;cursor:hand;"><span onmousedown="tabScroll('left')" onmouseup="tabScrollStop()">&lt;</span> <span onmousedown="tabScroll('right')" onmouseup="tabScrollStop()">&gt;</TD>
+ 		<TD width="25"><IMG SRC="../images/close_all.gif" WIDTH="21" HEIGHT="21" BORDER=0 ALT="" onclick="win.removeall()" align="center" onmouseover="this.src='../images/close_all_over.gif'"  onmouseout="this.src='../images/close_all.gif'" vspace=2></TD>
+ 		<TD width="25"><IMG SRC="../images/close.gif" WIDTH="21" HEIGHT="21" BORDER=0 ALT="" onclick="win.removewin(win.currentwin)" align="center" onmouseover="this.src='../images/close_over.gif'" onmousedown="this.src='../images/close_down.gif'" onmouseout="this.src='../images/close.gif'" vspace=2></TD>
+	</TR>
+	<TR>
+		<TD colspan=4>
+			<TABLE height="100%" width="100%" border=0 cellspacing=15 cellpadding=0 bgCOLOR="#ECE9D8">
+				<TR>
+					<TD  id="mywindows" align="center">
+						
+				<br><h1 style="color:red">&nbsp;</h1>
+                       </TD></TR>
+			</TABLE>
+		</TD>
+	</TR>
+</TABLE>
+</BODY>
+</HTML> 

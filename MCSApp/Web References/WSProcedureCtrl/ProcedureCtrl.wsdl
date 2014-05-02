@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://fingu.com/mcs" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://fingu.com/mcs" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://fingu.com/mcs">
+      <s:element name="CheckModel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ModelID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Flag" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckModelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckModelResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckModelByBarCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Flag" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckModelByBarCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckModelByBarCodeResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RepairProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RepairProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RepairProductResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcedureChanged">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcedureChangedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ProcedureChangedResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckProcedure">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Process" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="BeginOrEnd" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckProcedureResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckProcedureResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="oMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CanDoNext">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Process" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CanDoNextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CanDoNextResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFinishedProcess">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFinishedProcessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFinishedProcessResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SaveProcessPurely">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Process" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmployeeID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Result" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Exception" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="BeginTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="EndTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveProcessPurelyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveProcessPurelyResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="oMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveProcess">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Process" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmployeeID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Result" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Exception" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="BeginTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="EndTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveProcessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveProcessResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="oMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveProcessBegin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Process" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="EmployeeID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="BeginTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveProcessBeginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveProcessBeginResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="oMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveProcessEnd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Process" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Result" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Exception" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Data" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EndTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveProcessEndResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveProcessEndResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="oMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Process" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTestingConfiguration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConfigurationName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTestingConfigurationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTestingConfigurationResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CheckModelSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckModel" />
+  </wsdl:message>
+  <wsdl:message name="CheckModelSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckModelByBarCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckModelByBarCode" />
+  </wsdl:message>
+  <wsdl:message name="CheckModelByBarCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckModelByBarCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="RepairProductSoapIn">
+    <wsdl:part name="parameters" element="tns:RepairProduct" />
+  </wsdl:message>
+  <wsdl:message name="RepairProductSoapOut">
+    <wsdl:part name="parameters" element="tns:RepairProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcedureChangedSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcedureChanged" />
+  </wsdl:message>
+  <wsdl:message name="ProcedureChangedSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcedureChangedResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckProcedureSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckProcedure" />
+  </wsdl:message>
+  <wsdl:message name="CheckProcedureSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckProcedureResponse" />
+  </wsdl:message>
+  <wsdl:message name="CanDoNextSoapIn">
+    <wsdl:part name="parameters" element="tns:CanDoNext" />
+  </wsdl:message>
+  <wsdl:message name="CanDoNextSoapOut">
+    <wsdl:part name="parameters" element="tns:CanDoNextResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFinishedProcessSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFinishedProcess" />
+  </wsdl:message>
+  <wsdl:message name="GetFinishedProcessSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFinishedProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveProcessPurelySoapIn">
+    <wsdl:part name="parameters" element="tns:SaveProcessPurely" />
+  </wsdl:message>
+  <wsdl:message name="SaveProcessPurelySoapOut">
+    <wsdl:part name="parameters" element="tns:SaveProcessPurelyResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveProcessSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveProcess" />
+  </wsdl:message>
+  <wsdl:message name="SaveProcessSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveProcessBeginSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveProcessBegin" />
+  </wsdl:message>
+  <wsdl:message name="SaveProcessBeginSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveProcessBeginResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveProcessEndSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveProcessEnd" />
+  </wsdl:message>
+  <wsdl:message name="SaveProcessEndSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveProcessEndResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="GetDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTestingConfigurationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTestingConfiguration" />
+  </wsdl:message>
+  <wsdl:message name="GetTestingConfigurationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTestingConfigurationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ProcedureCtrlSoap">
+    <wsdl:operation name="CheckModel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">品号检查</wsdl:documentation>
+      <wsdl:input message="tns:CheckModelSoapIn" />
+      <wsdl:output message="tns:CheckModelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckModelByBarCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">通过条码来做品号检查</wsdl:documentation>
+      <wsdl:input message="tns:CheckModelByBarCodeSoapIn" />
+      <wsdl:output message="tns:CheckModelByBarCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RepairProduct">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询产品是否处于返修状态</wsdl:documentation>
+      <wsdl:input message="tns:RepairProductSoapIn" />
+      <wsdl:output message="tns:RepairProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcedureChanged">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询产品生产流程是否发生更改</wsdl:documentation>
+      <wsdl:input message="tns:ProcedureChangedSoapIn" />
+      <wsdl:output message="tns:ProcedureChangedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckProcedure">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">工艺流程检查</wsdl:documentation>
+      <wsdl:input message="tns:CheckProcedureSoapIn" />
+      <wsdl:output message="tns:CheckProcedureSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CanDoNext">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">是否可进入下一工序</wsdl:documentation>
+      <wsdl:input message="tns:CanDoNextSoapIn" />
+      <wsdl:output message="tns:CanDoNextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFinishedProcess">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询产品已作业工序</wsdl:documentation>
+      <wsdl:input message="tns:GetFinishedProcessSoapIn" />
+      <wsdl:output message="tns:GetFinishedProcessSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveProcessPurely">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">只保存工序记录及数据，不检查工序流程</wsdl:documentation>
+      <wsdl:input message="tns:SaveProcessPurelySoapIn" />
+      <wsdl:output message="tns:SaveProcessPurelySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveProcess">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">保存工序记录及数据</wsdl:documentation>
+      <wsdl:input message="tns:SaveProcessSoapIn" />
+      <wsdl:output message="tns:SaveProcessSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveProcessBegin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">保存工序信息(工序开始)</wsdl:documentation>
+      <wsdl:input message="tns:SaveProcessBeginSoapIn" />
+      <wsdl:output message="tns:SaveProcessBeginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveProcessEnd">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">保存工序信息(工序结束)</wsdl:documentation>
+      <wsdl:input message="tns:SaveProcessEndSoapIn" />
+      <wsdl:output message="tns:SaveProcessEndSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询产品数据</wsdl:documentation>
+      <wsdl:input message="tns:GetDataSoapIn" />
+      <wsdl:output message="tns:GetDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTestingConfiguration">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询自动化测试功能的配置信息</wsdl:documentation>
+      <wsdl:input message="tns:GetTestingConfigurationSoapIn" />
+      <wsdl:output message="tns:GetTestingConfigurationSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ProcedureCtrlSoap" type="tns:ProcedureCtrlSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckModel">
+      <soap:operation soapAction="http://fingu.com/mcs/CheckModel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckModelByBarCode">
+      <soap:operation soapAction="http://fingu.com/mcs/CheckModelByBarCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RepairProduct">
+      <soap:operation soapAction="http://fingu.com/mcs/RepairProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcedureChanged">
+      <soap:operation soapAction="http://fingu.com/mcs/ProcedureChanged" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckProcedure">
+      <soap:operation soapAction="http://fingu.com/mcs/CheckProcedure" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CanDoNext">
+      <soap:operation soapAction="http://fingu.com/mcs/CanDoNext" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFinishedProcess">
+      <soap:operation soapAction="http://fingu.com/mcs/GetFinishedProcess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProcessPurely">
+      <soap:operation soapAction="http://fingu.com/mcs/SaveProcessPurely" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProcess">
+      <soap:operation soapAction="http://fingu.com/mcs/SaveProcess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProcessBegin">
+      <soap:operation soapAction="http://fingu.com/mcs/SaveProcessBegin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProcessEnd">
+      <soap:operation soapAction="http://fingu.com/mcs/SaveProcessEnd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://fingu.com/mcs/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTestingConfiguration">
+      <soap:operation soapAction="http://fingu.com/mcs/GetTestingConfiguration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ProcedureCtrlSoap12" type="tns:ProcedureCtrlSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckModel">
+      <soap12:operation soapAction="http://fingu.com/mcs/CheckModel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckModelByBarCode">
+      <soap12:operation soapAction="http://fingu.com/mcs/CheckModelByBarCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RepairProduct">
+      <soap12:operation soapAction="http://fingu.com/mcs/RepairProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcedureChanged">
+      <soap12:operation soapAction="http://fingu.com/mcs/ProcedureChanged" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckProcedure">
+      <soap12:operation soapAction="http://fingu.com/mcs/CheckProcedure" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CanDoNext">
+      <soap12:operation soapAction="http://fingu.com/mcs/CanDoNext" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFinishedProcess">
+      <soap12:operation soapAction="http://fingu.com/mcs/GetFinishedProcess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProcessPurely">
+      <soap12:operation soapAction="http://fingu.com/mcs/SaveProcessPurely" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProcess">
+      <soap12:operation soapAction="http://fingu.com/mcs/SaveProcess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProcessBegin">
+      <soap12:operation soapAction="http://fingu.com/mcs/SaveProcessBegin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProcessEnd">
+      <soap12:operation soapAction="http://fingu.com/mcs/SaveProcessEnd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetData">
+      <soap12:operation soapAction="http://fingu.com/mcs/GetData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTestingConfiguration">
+      <soap12:operation soapAction="http://fingu.com/mcs/GetTestingConfiguration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProcedureCtrl">
+    <wsdl:port name="ProcedureCtrlSoap" binding="tns:ProcedureCtrlSoap">
+      <soap:address location="http://localhost:52867/iMCS/ProcedureCtrl.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ProcedureCtrlSoap12" binding="tns:ProcedureCtrlSoap12">
+      <soap12:address location="http://localhost:52867/iMCS/ProcedureCtrl.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

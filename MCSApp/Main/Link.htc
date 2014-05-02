@@ -1,0 +1,36 @@
+
+<PUBLIC:COMPONENT>
+	<property name=speed />
+	<PUBLIC:ATTACH EVENT="oncontentready"   ONEVENT="fnInit()"   />
+	<PUBLIC:ATTACH EVENT="onclick"                 ONEVENT="fnClick()"   />
+	<PUBLIC:ATTACH EVENT="ondragstart"         ONEVENT="fnCancel()" />
+	<SCRIPT LANGUAGE="JScript">
+		/*****************************************************
+		初始化
+		*****************************************************/
+		function fnInit()
+		{
+			if(element.target.toLowerCase() == "tabwin")
+				element.onclick = fnCancel; 
+		}
+		/*****************************************************
+		鼠标点击
+		*****************************************************/
+		function fnClick()
+		{
+			var oEl = event.srcElement;
+			if(oEl.tagName=="A" && oEl.target.toLowerCase() == "tabwin")
+			{
+				window.top.fraMain.AddWin(oEl.href,oEl.innerText);
+			}
+		}
+
+		/*****************************************************
+		禁止拖动
+		*****************************************************/
+    function fnCancel()
+    {
+        window.event.returnValue = false;
+    }
+   </SCRIPT>
+</PUBLIC:COMPONENT>

@@ -1,0 +1,2390 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Created>1996-12-17T01:32:42Z</Created>
+  <LastSaved>2010-07-21T03:37:54Z</LastSaved>
+  <Version>11.9999</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <RemovePersonalInformation/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>4530</WindowHeight>
+  <WindowWidth>8505</WindowWidth>
+  <WindowTopX>480</WindowTopX>
+  <WindowTopY>120</WindowTopY>
+  <AcceptLabelsInFormulas/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="12"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="Default" ss:Name="">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="12"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s17" ss:Name="常规_Sheet1">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="12"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s24" ss:Parent="s17">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="宋体" x:CharSet="134"/>
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="0_ "/>
+  </Style>
+  <Style ss:ID="s25">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="宋体" x:CharSet="134"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s26">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Color="#FF0000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s27">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="宋体" x:CharSet="134"/>
+  </Style>
+  <Style ss:ID="s28">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="宋体" x:CharSet="134"/>
+  </Style>
+  <Style ss:ID="s29">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="宋体" x:CharSet="134"/>
+  </Style>
+  <Style ss:ID="s30">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="宋体" x:CharSet="134"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s31">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman"/>
+  </Style>
+  <Style ss:ID="s32">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="宋体" x:CharSet="134"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s33">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="宋体" x:CharSet="134"/>
+  </Style>
+  <Style ss:ID="s34">
+   <Font ss:FontName="宋体" x:CharSet="134"/>
+  </Style>
+  <Style ss:ID="s35">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s36">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="仿宋_GB2312" x:CharSet="134" x:Family="Modern" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s37">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s38">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s39">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12"/>
+  </Style>
+  <Style ss:ID="s40">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s42">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s43">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s44">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s45">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="宋体" x:CharSet="134"/>
+  </Style>
+  <Style ss:ID="s46">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="宋体" x:CharSet="134"/>
+  </Style>
+  <Style ss:ID="s47">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s49">
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#FF0000"/>
+  </Style>
+  <Style ss:ID="s50">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s51">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#FF99CC" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s53">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+  </Style>
+  <Style ss:ID="s54">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="10.5"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="7.23">
+  <Table ss:ExpandedColumnCount="11" ss:ExpandedRowCount="101" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="14.25">
+   <Column ss:StyleID="s33" ss:AutoFitWidth="0" ss:Width="42"/>
+   <Column ss:StyleID="s33" ss:AutoFitWidth="0" ss:Width="71.25"/>
+   <Column ss:StyleID="s34" ss:AutoFitWidth="0"/>
+   <Column ss:StyleID="s34" ss:AutoFitWidth="0" ss:Width="47.25"/>
+   <Column ss:StyleID="s33" ss:AutoFitWidth="0" ss:Width="82.5"/>
+   <Column ss:StyleID="s33" ss:AutoFitWidth="0" ss:Width="114"/>
+   <Column ss:AutoFitWidth="0" ss:Width="95.25"/>
+   <Column ss:Index="9" ss:AutoFitWidth="0" ss:Width="124.5"/>
+   <Column ss:Index="11" ss:Width="76.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="22.5">
+    <Cell ss:StyleID="s45"><Data ss:Type="String">序号</Data></Cell>
+    <Cell ss:StyleID="s45"/>
+    <Cell ss:StyleID="s46"/>
+    <Cell ss:StyleID="s46"/>
+    <Cell ss:StyleID="s45"><Data ss:Type="String">上海锦泰20个标间</Data></Cell>
+    <Cell ss:StyleID="s54"><Data ss:Type="String">上海浦兴美华30个标间</Data></Cell>
+    <Cell ss:StyleID="s50"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">55</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">财务管理部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">熊刚</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell><Data ss:Type="String">上海锦泰负责人</Data></Cell>
+    <Cell><Data ss:Type="String">范志辉</Data></Cell>
+    <Cell><Data ss:Type="Number">13638606059</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">52</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">财务管理部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">何明珍</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell><Data ss:Type="String">上海浦兴美华负责人</Data></Cell>
+    <Cell><Data ss:Type="String">何婵</Data></Cell>
+    <Cell><Data ss:Type="Number">13886013417</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">53</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">财务管理部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">倪珂</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">54</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">财务管理部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">雷晶</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"><Data ss:Type="Number">13437275207</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">56</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">财务管理部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">付敏</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">57</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">财务管理部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">刘汉莉</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"><Data ss:Type="Number">13971035254</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">81</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">采购部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">袁波</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">仓储物流部</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">李丽莎</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s24"><Data ss:Type="Number">15071052152</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">仓储物流部</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">余雯</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s24"><Data ss:Type="Number">13971460189</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">仓储物流部</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">邓艳锋</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s24"><Data ss:Type="Number">13618665992</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">69</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">车队</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">徐喜成</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">70</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">车队</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">章国强</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">71</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">车队</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">张洪彬</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">74</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">王志松</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">75</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">苏建军</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">77</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">张红金</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">78</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">范志辉</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">84</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">熊先锋</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">72</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">汪青</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">73</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">张婷</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">76</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">吴灵</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">79</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">严涛</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">80</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">胡艳</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">82</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">张碧华</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">83</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">吴峰霞</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">85</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">胡燕云</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">86</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">樊晶晶</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">87</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">胡婧</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">88</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">胡杨</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">人力资源部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">吕树珍</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">人力资源部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">余志锋</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">人力资源部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">汪光焱</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">人力资源部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">蔡军峰</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s47"><Data ss:Type="Number">13971310154</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">人力资源部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">方丽华</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">人力资源部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">陈丽平</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">人力资源部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">张丹</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">人力资源部</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">张菡</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">总办</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">米亚</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">总办</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">柯倩</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">42</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">张自力</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">43</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">韩  春</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">44</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">雷其志</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">45</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">丁  剑</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">47</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">李日新</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="Number">13707127226</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">49</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="String">毕迎喜</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">51</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">王  健</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">46</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">何建英</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:Index="6" ss:StyleID="s27"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">48</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s39"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40">陈  静</ss:Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s39"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40">李  婷</ss:Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">62</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">杨成涛</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s44"><Data ss:Type="Number">18986272325</Data></Cell>
+    <Cell ss:StyleID="s51"><Data ss:Type="String">副领队</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">63</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">杜凤兵</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="Number">15827009590</Data></Cell>
+    <Cell ss:StyleID="s43"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">64</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">李荣耀</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s44"><Data ss:Type="Number">1387133943</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">67</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">杨东</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s44"><Data ss:Type="Number">13871005339</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">68</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">施泉</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="Number">13260525853</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">58</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">何婵</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="Number">13886013417</Data></Cell>
+    <Cell ss:StyleID="s51"><Data ss:Type="String">领队</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">59</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">易丽</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s44"><Data ss:Type="Number">15872417768</Data></Cell>
+    <Cell ss:StyleID="s43"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">60</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">郭宝书</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="Number">15827315558</Data></Cell>
+    <Cell ss:StyleID="s43"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">61</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">徐莉萍</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s44"><Data ss:Type="Number">13667178575</Data></Cell>
+    <Cell ss:StyleID="s43"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">65</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">肖祖慧</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="Number">13554438355</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">66</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">武真真</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="Number">13476829270</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">品管部</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">毕敏生</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="Number">13607115750</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">品管部</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">舒俊</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">品管部</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">柳正</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">34</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">审计部</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">毛宁宁</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="Number">15172505589</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">审计部</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">王恒</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">89</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">沈曦</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">90</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">陈军波</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="Number">13477062016</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">91</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">徐勇</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">92</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">刘俊</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">93</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">郭谦</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">94</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">彭俊</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">95</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">史博文</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">96</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">关洪伟</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">97</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">杨中树</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">98</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">李盼</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">99</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">彭松涛</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">园林</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">乐细进</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">40</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">证券部</Data></Cell>
+    <Cell ss:StyleID="s42"><Data ss:Type="String">王洲</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s43"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">38</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">证券部</Data></Cell>
+    <Cell ss:StyleID="s42"><Data ss:Type="String">李珍</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="Number">13871233083</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">39</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">证券部</Data></Cell>
+    <Cell ss:StyleID="s42"><Data ss:Type="String">王雅莉</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s43"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">41</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">证券部</Data></Cell>
+    <Cell ss:StyleID="s42"><Data ss:Type="String">吴水兰</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s43"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">36</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">资产管理部</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="String">王志东</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">15827063459</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">资产管理部</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="String">李炫</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">13163380692</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">叶军</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">陈晓勇</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">李云生</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="Number">13986178663</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">李咏平</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">雷翔</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">鄂黎</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">盛玉亮</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">朱希久</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">31</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">汪成志</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">郭小憨</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s32"/>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">帅足荣</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">李晓英</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">梁平清</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">29</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">丘菊</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">杨汉平</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">29</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">但林枝</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s32"/>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">29</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">电装</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">刘欢</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>300</HorizontalResolution>
+    <VerticalResolution>300</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>1</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <Sorting xmlns="urn:schemas-microsoft-com:office:excel">
+   <Sort>列 B</Sort>
+   <Sort>列 E</Sort>
+  </Sorting>
+ </Worksheet>
+ <Worksheet ss:Name="7.24">
+  <Table ss:ExpandedColumnCount="11" ss:ExpandedRowCount="101" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="14.25">
+   <Column ss:Index="5" ss:StyleID="s53" ss:AutoFitWidth="0" ss:Width="106.5"/>
+   <Column ss:StyleID="s53" ss:AutoFitWidth="0" ss:Width="83.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="92.25"/>
+   <Column ss:Index="9" ss:AutoFitWidth="0" ss:Width="123"/>
+   <Column ss:Index="11" ss:AutoFitWidth="0" ss:Width="90"/>
+   <Row>
+    <Cell ss:Index="5"><Data ss:Type="String">上海锦泰25个标间</Data></Cell>
+    <Cell><Data ss:Type="String">欣星25个标间</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">55</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">财务管理部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">熊刚</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s49"><Data ss:Type="String">上海锦泰负责人</Data></Cell>
+    <Cell ss:StyleID="s49"><Data ss:Type="String">范志辉</Data></Cell>
+    <Cell ss:StyleID="s49"><Data ss:Type="Number">13638606059</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">52</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">财务管理部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">何明珍</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s49"><Data ss:Type="String">上海欣星负责人</Data></Cell>
+    <Cell ss:StyleID="s49"><Data ss:Type="String">何婵</Data></Cell>
+    <Cell ss:StyleID="s49"><Data ss:Type="Number">13886013417</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">53</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">财务管理部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">倪珂</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">54</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">财务管理部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">雷晶</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"><Data ss:Type="Number">13437275207</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">56</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">财务管理部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">付敏</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">57</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">财务管理部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">刘汉莉</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"><Data ss:Type="Number">13971035254</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">81</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">采购部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">袁波</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">仓储物流部</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">李丽莎</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s24"><Data ss:Type="Number">15071052152</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">仓储物流部</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">余雯</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s24"><Data ss:Type="Number">13971460189</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">仓储物流部</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">邓艳锋</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s24"><Data ss:Type="Number">13618665992</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">69</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">车队</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">徐喜成</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">70</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">车队</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">章国强</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">71</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">车队</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">张洪彬</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">74</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">王志松</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">75</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">苏建军</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">77</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">张红金</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">78</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">范志辉</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">84</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">熊先锋</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">72</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">汪青</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">73</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">张婷</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">76</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">吴灵</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">79</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">严涛</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">80</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">胡艳</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">82</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">张碧华</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">83</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">吴峰霞</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">85</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">胡燕云</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">86</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">樊晶晶</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">87</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">胡婧</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">88</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">会计部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">胡杨</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">人力资源部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">吕树珍</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">人力资源部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">余志锋</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">人力资源部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">汪光焱</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">人力资源部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">蔡军峰</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s47"><Data ss:Type="Number">13971310154</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">人力资源部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">方丽华</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">人力资源部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">陈丽平</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">人力资源部</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">张丹</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s25"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">人力资源部</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">张菡</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">总办</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">米亚</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">总办</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">柯倩</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s29"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s29"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">42</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">张自力</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">43</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">韩  春</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">44</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">雷其志</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">45</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">丁  剑</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">47</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">李日新</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"><Data ss:Type="Number">13707127226</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">49</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="String">毕迎喜</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">51</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">王  健</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">46</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">何建英</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s33"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">48</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s39"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40">陈  静</ss:Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">基建部</Data></Cell>
+    <Cell ss:StyleID="s39"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40">李  婷</ss:Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">36</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">资产管理部</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="String">王志东</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">15827063459</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">资产管理部</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="String">李炫</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">13163380692</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">62</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">杨成涛</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s44"><Data ss:Type="Number">18986272325</Data></Cell>
+    <Cell ss:StyleID="s51"><Data ss:Type="String">副领队</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">63</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">杜凤兵</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="Number">15827009590</Data></Cell>
+    <Cell ss:StyleID="s43"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">64</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">李荣耀</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s44"><Data ss:Type="Number">1387133943</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">67</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">杨东</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s44"><Data ss:Type="Number">13871005339</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">68</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">施泉</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="Number">13260525853</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">58</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">何婵</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="Number">13886013417</Data></Cell>
+    <Cell ss:StyleID="s51"><Data ss:Type="String">领队</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">59</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">易丽</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s44"><Data ss:Type="Number">15872417768</Data></Cell>
+    <Cell ss:StyleID="s43"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">60</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">郭宝书</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="Number">15827315558</Data></Cell>
+    <Cell ss:StyleID="s43"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">61</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">徐莉萍</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s44"><Data ss:Type="Number">13667178575</Data></Cell>
+    <Cell ss:StyleID="s43"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">65</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">肖祖慧</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="Number">13554438355</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">66</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">计划部</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">武真真</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="Number">13476829270</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">品管部</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">毕敏生</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="Number">13607115750</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">品管部</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">舒俊</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">品管部</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">柳正</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">34</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">审计部</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">毛宁宁</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="Number">15172505589</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">审计部</Data></Cell>
+    <Cell ss:StyleID="s28"><Data ss:Type="String">王恒</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">89</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">沈曦</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">90</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">陈军波</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="Number">13477062016</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">91</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">徐勇</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">92</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">刘俊</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">93</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">郭谦</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">94</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">彭俊</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">95</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">史博文</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">96</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">关洪伟</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">97</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">杨中树</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">98</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">李盼</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">99</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">信息部</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">彭松涛</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">园林</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">乐细进</Data></Cell>
+    <Cell ss:StyleID="s30"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s30"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">40</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">证券部</Data></Cell>
+    <Cell ss:StyleID="s42"><Data ss:Type="String">王洲</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s43"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">38</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">证券部</Data></Cell>
+    <Cell ss:StyleID="s42"><Data ss:Type="String">李珍</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="Number">13871233083</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">39</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">证券部</Data></Cell>
+    <Cell ss:StyleID="s42"><Data ss:Type="String">王雅莉</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s43"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">41</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">证券部</Data></Cell>
+    <Cell ss:StyleID="s42"><Data ss:Type="String">吴水兰</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s43"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">叶军</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">陈晓勇</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">李云生</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="Number">13986178663</Data></Cell>
+    <Cell ss:StyleID="s47"><Data ss:Type="String">带队</Data></Cell>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">李咏平</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">雷翔</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">鄂黎</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">盛玉亮</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">朱希久</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">31</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">汪成志</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">郭小憨</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">男</Data></Cell>
+    <Cell ss:StyleID="s32"/>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">帅足荣</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">李晓英</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">梁平清</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">29</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">丘菊</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">杨汉平</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s31"/>
+    <Cell ss:StyleID="s31"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">综合部</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">但林枝</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s32"/>
+    <Cell ss:StyleID="s32"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">电装</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">刘欢</Data></Cell>
+    <Cell ss:StyleID="s43"><Data ss:Type="String">女</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s47"/>
+    <Cell ss:StyleID="s47"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>300</HorizontalResolution>
+    <VerticalResolution>300</VerticalResolution>
+   </Print>
+   <TopRowVisible>57</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>69</ActiveRow>
+     <ActiveCol>6</ActiveCol>
+     <RangeSelection>R70C7:R70C8</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

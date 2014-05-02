@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MCSApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MCSApp_WSSecurity_Security" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2070/Security.asmx</Value>
+    </Setting>
+    <Setting Name="MCSApp_WSProcedureCtrl_ProcedureCtrl" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:52867/iMCS/ProcedureCtrl.asmx</Value>
+    </Setting>
+    <Setting Name="MCSApp_WSProductTrace_ProductTrace" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:52867/iMCS/ProductTrace.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

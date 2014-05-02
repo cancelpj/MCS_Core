@@ -1,0 +1,107 @@
+<PUBLIC:COMPONENT>
+	<PUBLIC:ATTACH EVENT="oncontentready"   ONEVENT="fnInit()"   />
+	<PUBLIC:ATTACH EVENT="onmouseover"      ONEVENT="fnOver()"   />
+	<PUBLIC:ATTACH EVENT="onmouseout"        ONEVENT="fnOut()"   />
+	<PUBLIC:ATTACH EVENT="onmousedown"    ONEVENT="fnDown()"   />
+	<PUBLIC:ATTACH EVENT="onmouseup"         ONEVENT="fnUp()"   />
+	<PUBLIC:ATTACH EVENT="onclick"                 ONEVENT="fnClick()"   />
+	<PUBLIC:ATTACH EVENT="ondragstart"         ONEVENT="fnCancel()" />
+	<SCRIPT LANGUAGE="JScript">
+ //   window.onerror = function fnNoOp() {return true; };
+		/*****************************************************
+		初始化
+		*****************************************************/
+    function fnInit()
+    {
+//			alert(element.button)
+			if(element.button=="down")fnSelect()
+    }
+		/*****************************************************
+		鼠标经过按钮
+		*****************************************************/
+		function fnOver()
+		{
+			if(element.button=="down")
+			{
+				fnSelectOver();
+			}
+			else{
+				element.rows[0].cells[0].children(0).src="../images/button_left_over.gif";
+				element.rows[0].cells[1].className="buttonline_over";
+				element.rows[0].cells[2].children(0).src="../images/button_right_over.gif";
+			}
+		}
+		/*****************************************************
+		鼠标移出按钮
+		*****************************************************/
+		function fnOut()
+		{
+			if(element.button=="down")
+			{
+				fnSelect();
+			}
+			else{
+				fnNormal();
+			}
+		}
+		/*****************************************************
+		鼠标按下按钮
+		*****************************************************/
+		function fnDown()
+		{
+			element.rows[0].cells[0].children(0).src="../images/button_left_down.gif";
+			element.rows[0].cells[1].className="buttonline_down";
+			element.rows[0].cells[2].children(0).src="../images/button_right_down.gif";
+		}
+		/*****************************************************
+		鼠标释放按钮
+		*****************************************************/
+		function fnUp()
+		{
+			if(element.button=="down")return;
+			fnOver();
+		}
+		/*****************************************************
+		鼠标点击按钮
+		*****************************************************/
+		function fnClick()
+		{
+			eval(element.event);
+			if(element.button=="up")	//如果未按下
+			{
+				element.button="down";
+				fnSelect();
+			}
+			else if(element.button=="down")	//如果已经按下
+			{
+				element.button="up";
+				fnOver();
+			}
+		}
+		function fnSelect()
+		{
+				element.rows[0].cells[0].children(0).src="../images/button_left_select.gif";
+				element.rows[0].cells[1].className="buttonline_select";
+				element.rows[0].cells[2].children(0).src="../images/button_right_select.gif";
+		}
+		function fnSelectOver()
+		{
+				element.rows[0].cells[0].children(0).src="../images/button_left_select_over.gif";
+				element.rows[0].cells[1].className="buttonline_select_over";
+				element.rows[0].cells[2].children(0).src="../images/button_right_select_over.gif";
+		}
+		function fnNormal()
+		{
+				element.rows[0].cells[0].children(0).src="../images/button_left.gif";
+				element.rows[0].cells[1].className="buttonline";
+				element.rows[0].cells[2].children(0).src="../images/button_right.gif";
+		}
+		/*****************************************************
+		禁止拖动
+		*****************************************************/
+    function fnCancel()
+    {
+        window.event.returnValue = false;
+    }
+   </SCRIPT>
+</PUBLIC:COMPONENT>

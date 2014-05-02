@@ -1,0 +1,104 @@
+/**
+ *
+ */
+.NAME_XIO_UI_FONT {
+	font-size: 12px;
+}
+
+/**
+ * disenabled
+ */
+.NAME_XIO_UI_DISENABLED {
+	filter: gray() alpha(opacity = 30); /* IE */
+	opacity: 0.30; /* Safari, Opera and Mozilla */
+}
+
+/**
+ * name.xio.ui.Button
+ */
+.NAME_XIO_UI_BUTTON {
+	height: 24px;
+	cursor: default;
+	padding: 3px;
+	margin: 1px;
+	background: buttonface;
+	border: buttonface 1px solid;
+}
+
+.NAME_XIO_UI_BUTTON_IMGCELL {
+	height: 16px;
+}
+
+/* txt padding-top is (button padding + 3) */
+.NAME_XIO_UI_BUTTON_TXTCELL {
+	padding-top: 6px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+}
+
+.NAME_XIO_UI_BUTTON_OVER {
+	border-left: buttonhighlight 1px solid;
+	border-top: buttonhighlight 1px solid;
+	border-right: buttonshadow 1px solid;
+	border-bottom: buttonshadow 1px solid;
+}
+
+.NAME_XIO_UI_BUTTON_PRESSED {
+	border-left: buttonshadow 1px solid;
+	border-top: buttonshadow 1px solid;
+	border-right: buttonhighlight 1px solid;
+	border-bottom: buttonhighlight 1px solid;
+}
+
+.NAME_XIO_UI_TOGGLE_BUTTON_PRESSED {
+	border-left: buttonshadow 1px solid;
+	border-top: buttonshadow 1px solid;
+	border-right: buttonhighlight 1px solid;
+	border-bottom: buttonhighlight 1px solid;
+	background-color: #faf9f3;
+}
+
+/**
+ * name.xio.ui.ToolBar
+ */
+.NAME_XIO_UI_TOOLBAR {
+	height: 30px;
+	border: 1px outset;
+	background-color: buttonface;
+}
+
+/**
+ * name.xio.ui.ToolBar.Separator
+ */
+.NAME_XIO_UI_TOOLBAR_SEPARATOR {
+	width: 1px;
+	height: 16px;
+	margin: 2px;
+	background-color: #999966;
+	border-left: buttonhighlight 1px solid;
+	border-top: buttonhighlight 1px solid;
+	border-right: buttonshadow 1px solid;
+	border-bottom: buttonshadow 1px solid;
+}
+
+/**
+ * name.xio.ui.Label
+ */
+.NAME_XIO_UI_LABEL {
+	height: 24px;
+	padding: 5px;
+}
+
+.NAME_XIO_UI_SCROLL_PANEL {
+	overflow: auto;
+}
+
+/**
+ *
+ */
+.NAME_XIO_UI_FRAME {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0px;
+}

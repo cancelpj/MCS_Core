@@ -1,0 +1,1102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title>MCSleft</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        <!
+        -- td
+        {
+        }
+        .menubar
+        {
+            behavior: url(menubar.htc);
+        }
+        .barcontent
+        {
+            display: none;
+        }
+        .barcontent1
+        {
+            overflow: hidden;
+            display: ;;
+        }
+        .bartitle
+        {
+            background: url(../images/toolbar_bg.gif);
+            background-repeat: repeat-x;
+            height: 25px;
+            font-variant: middle;
+            cursor: hand;
+        }
+        .datalist
+        {
+            color: white;
+            line-height: 180%;
+            padding-left: 5pt;
+        }
+        .clstrc
+        {
+            display: none;
+        }
+        .clstrcshow
+        {
+            display: ;;
+        }
+        .clstr
+        {
+            color: white;
+            cursor: hand;
+        }
+        -- ></style>
+
+    <script language="JavaScript">
+<!--
+function init()
+{
+}
+
+function RemoveAll()
+{
+	top.fraMain.win.removeall();
+}
+
+function AddWin(url, title)
+{
+	top.fraMain.AddWin(url, title);
+}
+function gettabWin()
+{
+var clkelement=event.srcElement;
+//clkelement.target="tabWin";
+clkelement.target="fraMain";
+    //return "tabWin";
+}
+//-->
+    </script>
+
+</head>
+<body bgcolor="#6E8ADE" style="border-left: 1pt solid white; border-bottom: 1pt solid white;"
+    leftmargin="0" topmargin="0" oncontextmenu="return false" onselectstart="return false"
+    ondragstart="return false" scroll="no" onload="init()">
+    <table height="100%" width="97%" border="0" cellspacing="0" cellpadding="0" align="left"
+        class="menubar">
+        <tr>
+            <td valign="top">
+                <!--生产计划开始-->
+                <div id="bar0" class="clsPart">
+                    <table height="25" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr height="25">
+                            <td class="bartitle" align="center">
+                                生产计划
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="bar0content" class="barcontent">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    <div class="clsdiv">
+                                        <a href="UserInfo/ChangePassword.htm" href="#" onclick="gettabWin()">修改密码</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    <div class="clsdiv">
+                                        <a href="UserInfo/ChangePassword.htm" href="#" onclick="gettabWin()">修改密码</a></div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table height="100%" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td bgcolor="#D6DFF" width="35">
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!--产品追溯开始-->
+                <div id="bar1" class="clsPart">
+                    <table height="25" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr height="25">
+                            <td class="bartitle" align="center">
+                                产品追溯
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="bar1content" class="barcontent">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;理论学习篇
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="BillClassroom/清单计价应用讲座.htm" href="#" onclick="gettabWin()">清单计价应用讲座</a>
+                                    </div>
+                                    <div class="clsdiv">
+                                        <a href="BillClassroom/招投标法规讲座.htm" href="#" onclick="gettabWin()">招投标法规讲座</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;实务学习篇
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="BillClassroom/招投标流程了解.htm" href="#" onclick="gettabWin()">招投标流程了解</a>
+                                    </div>
+                                    <div class="clsdiv">
+                                        <a href="BillClassroom/完整工程实例说明.htm" href="#" onclick="gettabWin()">完整工程实例说明</a>
+                                    </div>
+                                    <div class="clsdiv">
+                                        <a href="BillClassroom/实务重难点分析.htm" href="#" onclick="gettabWin()">实务重难点分析</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;学习日志
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="BillClassroom/学习日志.htm" href="#" onclick="gettabWin()">学习日志</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table height="100%" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td bgcolor="#D6DFF" width="35">
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!--生产过程管理开始-->
+                <div id="bar2" class="clsPart">
+                    <table height="25" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr height="25">
+                            <td class="bartitle" align="center">
+                                生产过程管理
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="bar2content" class="barcontent">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;专家答疑
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="FAQRoom/专家答疑.htm" href="#" onclick="gettabWin()">专家答疑</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;提问区
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="FAQRoom/提问区.htm" href="#" onclick="gettabWin()">提问区</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;答复汇总
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="FAQRoom/答复汇总.htm" href="#" onclick="gettabWin()">答复汇总</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;学习交流区
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="FAQRoom/学习交流区.htm" href="#" onclick="gettabWin()">学习交流区</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table height="100%" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td bgcolor="#D6DFF" width="35">
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!--作业员工管理开始-->
+                <div id="bar3" class="clsPart">
+                    <table height="25" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr height="25">
+                            <td class="bartitle" align="center">
+                                作业员工管理
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="bar3content" class="barcontent">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;知识参考
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="ReadingRoom/精品文章分享.htm" href="#" onclick="gettabWin()">精品文章分享</a>
+                                    </div>
+                                    <div class="clsdiv">
+                                        <a href="ReadingRoom/专家答疑汇总.htm" href="#" onclick="gettabWin()">专家答疑汇总</a>
+                                    </div>
+                                    <div class="clsdiv">
+                                        <a href="ReadingRoom/专业书籍推荐.htm" href="#" onclick="gettabWin()">专业书籍推荐</a>
+                                    </div>
+                                    <div class="clsdiv">
+                                        <a href="ReadingRoom/VCD教学资源.htm" href="#" onclick="gettabWin()">VCD教学资源</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;软件下载
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="ReadingRoom/清单计价软件学习版.htm" href="#" onclick="gettabWin()">清单计价软件学习版</a>
+                                    </div>
+                                    <div class="clsdiv">
+                                        <a href="ReadingRoom/清单算量软件学习版.htm" href="#" onclick="gettabWin()">清单算量软件学习版</a>
+                                    </div>
+                                    <div class="clsdiv">
+                                        <a href="ReadingRoom/钢筋统计软件学习版.htm" href="#" onclick="gettabWin()">钢筋统计软件学习版</a>
+                                    </div>
+                                    <div class="clsdiv">
+                                        <a href="ReadingRoom/其他软件学习版.htm" href="#" onclick="gettabWin()">其他软件学习版</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;上载文章
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="ReadingRoom/原创区.htm" href="#" onclick="gettabWin()">原创区</a>
+                                    </div>
+                                    <div class="clsdiv">
+                                        <a href="ReadingRoom/推荐区.htm" href="#" onclick="gettabWin()">推荐区</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table height="100%" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td bgcolor="#D6DFF" width="35">
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!--系统管理开始-->
+                <div id="bar4" class="clsPart">
+                    <table height="25" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr height="25">
+                            <td class="bartitle" align="center">
+                                系统管理
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="bar4content" class="barcontent">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;理论考试
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="Examination/清单计价应用.htm" href="#" onclick="gettabWin()">清单计价应用</a>
+                                    </div>
+                                    <div class="clsdiv">
+                                        <a href="Examination/招投标法规.htm" href="#" onclick="gettabWin()">招投标法规</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;实务考试
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="Examination/招投标流程.htm" href="#" onclick="gettabWin()">招投标流程</a>
+                                    </div>
+                                    <div class="clsdiv">
+                                        <a href="Examination/完整工程实例.htm" href="#" onclick="gettabWin()">完整工程实例</a>
+                                    </div>
+                                    <div class="clsdiv">
+                                        <a href="Examination/实务重难点.htm" href="#" onclick="gettabWin()">实务重难点</a>
+                                    </div>
+                                    <div class="clsdiv">
+                                        <a href="Examination/综合类.htm" href="#" onclick="gettabWin()">综合类</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;今日考点
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="Examination/今日考点.htm" href="#" onclick="gettabWin()">今日考点</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;成绩排名
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="Examination/成绩排名.htm" href="#" onclick="gettabWin()">成绩排名</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table height="100%" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td bgcolor="#D6DFF" width="35">
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!--数据查询、统计及报表开始-->
+                <div id="bar5" class="clsPart">
+                    <table height="25" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr height="25">
+                            <td class="bartitle" align="center">
+                                数据查询、统计及报表
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="bar5content" class="barcontent">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;工程下载
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="Practice/工程填填看.htm" href="#" onclick="gettabWin()">工程填填看</a>
+                                    </div>
+                                    <div class="clsdiv">
+                                        <a href="Practice/体验完整招投标.htm" href="#" onclick="gettabWin()">体验完整招投标</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;结果上传
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="Practice/结果上传.htm" href="#" onclick="gettabWin()">结果上传</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;工程讨论区
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="Practice/招标区.htm" href="#" onclick="gettabWin()">招标区</a></div>
+                                    <div class="clsdiv">
+                                        <a href="Practice/投标区.htm" href="#" onclick="gettabWin()">投标区</a></div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr class="clstr">
+                                <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                    <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                                </td>
+                                <td>
+                                    &nbsp;清单英雄榜
+                                </td>
+                            </tr>
+                            <tr class="clstrc">
+                                <td bgcolor="#D6DFF&">
+                                    &nbsp;
+                                </td>
+                                <td class="datalist">
+                                    <div class="clsdiv">
+                                        <a href="Practice/清单英雄榜.htm" href="#" onclick="gettabWin()">清单英雄榜</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table height="100%" width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td bgcolor="#D6DFF" width="35">
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+<table height="100%" width="97%" border="0" cellspacing="0" cellpadding="0" align="left"
+    class="menubar">
+    <tr>
+        <td valign="top">
+            <div id='Div1' class='clsPart'>
+                <table height='25' width='100%' border="0" cellspacing="0" cellpadding="0" align='center'>
+                    <tr height='25'>
+                        <td class='bartitle' align='center'>
+                            计划
+                        </td>
+                    </tr>
+                </table>
+                <div id='Div2' class='barcontent'>
+                    <table width='100%' border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/PlanManage/MakePlan.aspx' href='#' onclick='gettabWin()'>&nbsp;&nbsp;制定生产计划单</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/PlanManage/ActiveOrClosePlan.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;查看生产计划单</a></div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table height='100%' width='100%' border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td bgcolor='#D6DFF' width='35'>
+                                &nbsp;
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id='Div3' class='clsPart'>
+                <table height='25' width='100%' border="0" cellspacing="0" cellpadding="0" align='center'>
+                    <tr height='25'>
+                        <td class='bartitle' align='center'>
+                            生产
+                        </td>
+                    </tr>
+                </table>
+                <div id='Div4' class='barcontent'>
+                    <table width='100%' border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/ProductManage/ProductArchives.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;建立产品档案</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/ProductManage/ComponentArchives.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;建立部件档案</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/ProductManage/MatierialArchives.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;建立物料档案</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/ProductManage/BindProduct.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;关联产品、物料、部件</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/ProductManage/InputProductSN.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;输入产品条码</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/ProcedureManage/RepairRecord.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;返修作业</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/ProcedureManage/ComOrMatChange.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;部件或物料更换</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/ProductManage/ProductToEmpty.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;腔体拆空</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/ProcedureManage/CustomerReturn.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;客退产品登记</a></div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table height='100%' width='100%' border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td bgcolor='#D6DFF' width='35'>
+                                &nbsp;
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id='Div5' class='clsPart'>
+                <table height='25' width='100%' border="0" cellspacing="0" cellpadding="0" align='center'>
+                    <tr height='25'>
+                        <td class='bartitle' align='center'>
+                            生产管理
+                        </td>
+                    </tr>
+                </table>
+                <div id='Div6' class='barcontent'>
+                    <table width='100%' border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/ProductManage/ModelList.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;品号管理</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/ProductManage/productStructure.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;产品结构定义</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/ProcedureManage/ProcedureFlow/ProcedureList.aspx' href='#'
+                                        onclick='gettabWin()'>&nbsp;&nbsp;工艺流程定义</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/EmployeeManage/GroupDispatch.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;班组排工</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/EmployeeManage/ManageGroup.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;管理班组</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/EmployeeManage/GroupMaterial.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;班组物料登记</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/SystemManage/BugType.aspx' href='#' onclick='gettabWin()'>&nbsp;&nbsp;缺陷类别定义</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/SystemManage/BugPoint.aspx' href='#' onclick='gettabWin()'>&nbsp;&nbsp;缺陷定位点定义</a></div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table height='100%' width='100%' border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td bgcolor='#D6DFF' width='35'>
+                                &nbsp;
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id='Div7' class='clsPart'>
+                <table height='25' width='100%' border="0" cellspacing="0" cellpadding="0" align='center'>
+                    <tr height='25'>
+                        <td class='bartitle' align='center'>
+                            系统管理
+                        </td>
+                    </tr>
+                </table>
+                <div id='Div8' class='barcontent'>
+                    <table width='100%' border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/EmployeeManage/UserInfor.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;员工档案管理</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/EmployeeManage/RoleDispatch.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;员工权限分配</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/EmployeeManage/GroupPage.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;班组档案</a></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/SystemManage/EventPage.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;查看事件日志</a></div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table height='100%' width='100%' border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td bgcolor='#D6DFF' width='35'>
+                                &nbsp;
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id='Div9' class='clsPart'>
+                <table height='25' width='100%' border="0" cellspacing="0" cellpadding="0" align='center'>
+                    <tr height='25'>
+                        <td class='bartitle' align='center'>
+                            数据查询统计及报表
+                        </td>
+                    </tr>
+                </table>
+                <div id='Div10' class='barcontent'>
+                    <table width='100%' border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width='35' height='30' bgcolor='#D6DFF' align='center'>
+                                <img src='../images/Arrow1.gif' width='20' height='20' border="0" alt=''>
+                            </td>
+                            <td>
+                                <div class='clsdiv'>
+                                    <a href='../Application/QueryManage/ProduceBoard.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;生产看板</a></div>
+                            </td>
+                        </tr>
+                        <tr class="clstr">
+                            <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                            </td>
+                            <td>
+                                统计
+                            </td>
+                        </tr>
+                        <tr class="clstrc">
+                            <td bgcolor="#D6DFFF">
+                                &nbsp;
+                            </td>
+                            <td class="datalist">
+                                <div class="clsdiv">
+                                    <a href='../Application/QueryManage/ProduceFinished.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;统计生产完成情况</a></div>
+                                <div class="clsdiv">
+                                    <a href='../Application/QueryManage/ProduceEfficiency.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;统计生产效率</a></div>
+                                <div class="clsdiv">
+                                    <a href='../Application/QueryManage/ProductQuality.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;统计产品检验质量</a></div>
+                                <div class="clsdiv">
+                                    <a href='../Application/QueryManage/BugTypeStatistics.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;缺陷分类统计</a></div>
+                                <div class="clsdiv">
+                                    <a href='../Application/QueryManage/BugPointStatistics.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;缺陷定位统计</a></div>
+                            </td>
+                        </tr>
+                        <tr class="clstr">
+                            <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                            </td>
+                            <td>
+                                查询
+                            </td>
+                        </tr>
+                        <tr class="clstrc">
+                            <td bgcolor="#D6DFFF">
+                                &nbsp;
+                            </td>
+                            <td class="datalist">
+                                <div class="clsdiv">
+                                    <a href='../Application/QueryManage/RepairRecordInfo.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;查询维修记录</a></div>
+                                <div class="clsdiv">
+                                    <a href='../Application/QueryManage/SingleProductInfo.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;查询单台产品在生产过程中的详细情况</a></div>
+                                <div class="clsdiv">
+                                    <a href='../Application/QueryManage/ProcedureData.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;查询产品在各个工序中产生的数据</a></div>
+                            </td>
+                        </tr>
+                        <tr class="clstr">
+                            <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                            </td>
+                            <td>
+                                追溯
+                            </td>
+                        </tr>
+                        <tr class="clstrc">
+                            <td bgcolor="#D6DFFF">
+                                &nbsp;
+                            </td>
+                            <td class="datalist">
+                                <div class="clsdiv">
+                                    <a href='../Application/ProductManage/ProductTrace.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;产品追溯查询</a></div>
+                                <div class="clsdiv">
+                                    <a href='../Application/ProcedureManage/ProcedureTrace.aspx' href='#' onclick='gettabWin()'>
+                                        &nbsp;&nbsp;流程追溯查询</a></div>
+                            </td>
+                        </tr>
+                        <tr class="clstr">
+                            <td width="35" height="30" bgcolor="#D6DFF" align="center">
+                                <img src="../images/Arrow1.gif" width="20" height="20" border="0" alt="">
+                            </td>
+                            <td>
+                                报表
+                            </td>
+                        </tr>
+                        <tr class="clstrc">
+                            <td bgcolor="#D6DFFF">
+                                &nbsp;
+                            </td>
+                            <td class="datalist">
+                                <div class="clsdiv">
+                                    <a href='Working.htm' href='#' onclick='gettabWin()'>&nbsp;&nbsp;CPK报表</a></div>
+                                <div class="clsdiv">
+                                    <a href='Working.htm' href='#' onclick='gettabWin()'>&nbsp;&nbsp;SPC报表</a></div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table height='100%' width='100%' border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td bgcolor='#D6DFF' width='35'>
+                                &nbsp;
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>

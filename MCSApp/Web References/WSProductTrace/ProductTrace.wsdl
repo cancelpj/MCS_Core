@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetModelID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetModelIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetModelIDResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSNResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPlanID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BarCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPlanIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPlanIDResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlanID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ModelID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveProductResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="oMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveComponent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PlanID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ModelID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveComponentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveComponentResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="oMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetModelIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetModelID" />
+  </wsdl:message>
+  <wsdl:message name="GetModelIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetModelIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSNSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSN" />
+  </wsdl:message>
+  <wsdl:message name="GetSNSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSNResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPlanIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPlanID" />
+  </wsdl:message>
+  <wsdl:message name="GetPlanIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPlanIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveProductSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveProduct" />
+  </wsdl:message>
+  <wsdl:message name="SaveProductSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveComponentSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveComponent" />
+  </wsdl:message>
+  <wsdl:message name="SaveComponentSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveComponentResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ProductTraceSoap">
+    <wsdl:operation name="GetModelID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询产品品号</wsdl:documentation>
+      <wsdl:input message="tns:GetModelIDSoapIn" />
+      <wsdl:output message="tns:GetModelIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSN">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询客户产品条码</wsdl:documentation>
+      <wsdl:input message="tns:GetSNSoapIn" />
+      <wsdl:output message="tns:GetSNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询生产计划号</wsdl:documentation>
+      <wsdl:input message="tns:GetPlanIDSoapIn" />
+      <wsdl:output message="tns:GetPlanIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveProduct">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">保存产品信息，加入计划号</wsdl:documentation>
+      <wsdl:input message="tns:SaveProductSoapIn" />
+      <wsdl:output message="tns:SaveProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveComponent">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">保存部件信息，加入计划号</wsdl:documentation>
+      <wsdl:input message="tns:SaveComponentSoapIn" />
+      <wsdl:output message="tns:SaveComponentSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ProductTraceSoap" type="tns:ProductTraceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetModelID">
+      <soap:operation soapAction="http://tempuri.org/GetModelID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSN">
+      <soap:operation soapAction="http://tempuri.org/GetSN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanID">
+      <soap:operation soapAction="http://tempuri.org/GetPlanID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProduct">
+      <soap:operation soapAction="http://tempuri.org/SaveProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveComponent">
+      <soap:operation soapAction="http://tempuri.org/SaveComponent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ProductTraceSoap12" type="tns:ProductTraceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetModelID">
+      <soap12:operation soapAction="http://tempuri.org/GetModelID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSN">
+      <soap12:operation soapAction="http://tempuri.org/GetSN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanID">
+      <soap12:operation soapAction="http://tempuri.org/GetPlanID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveProduct">
+      <soap12:operation soapAction="http://tempuri.org/SaveProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveComponent">
+      <soap12:operation soapAction="http://tempuri.org/SaveComponent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProductTrace">
+    <wsdl:port name="ProductTraceSoap" binding="tns:ProductTraceSoap">
+      <soap:address location="http://localhost:52867/iMCS/ProductTrace.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ProductTraceSoap12" binding="tns:ProductTraceSoap12">
+      <soap12:address location="http://localhost:52867/iMCS/ProductTrace.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

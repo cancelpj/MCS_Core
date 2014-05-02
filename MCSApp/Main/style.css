@@ -1,0 +1,73 @@
+/*****************************************************
+作者         : 阿门 http://www.nwpubbs.net/
+*****************************************************/
+
+/*****************************************************
+文档属性
+*****************************************************/
+body{
+	font-size:9pt;
+	border:0;
+	font-family: Verdana;
+}
+td{
+	font-size:9pt;
+	font-family: Verdana;
+}
+A{
+	behavior:url(Link.htc);
+}
+a:link,a:visited	{
+	text-decoration: none;
+	color: #FFFFFF; 
+}
+a:hover			{ text-decoration: underline }
+
+/*****************************************************
+标题栏渐变色条
+*****************************************************/
+.title1{
+	background-color: #4766A6;
+}
+.title2{
+	filter:progid:DXImageTransform.Microsoft.Gradient(endColorstr='#EEEAD6', startColorstr='#F1F3F3', gradientType='1');
+}
+/*****************************************************
+按纽
+*****************************************************/
+.button{
+	cursor:default;
+	display:inline;
+	behavior:url(button.htc);
+}
+.buttonline{
+	background: url(../images/button_center_bg.gif);
+	background-repeat: repeat-x;
+}
+.buttonline_over{
+	border-top:1pt solid #CECEC3;
+	border-bottom:1pt solid #CECEC3;
+	background: url(../images/button_center_bg_over.gif);
+	background-repeat: repeat-x;
+}
+.buttonline_down{
+	padding-top:2pt;
+	border-top:1pt solid #9D9D92;
+	border-bottom:1pt solid #9D9D92;
+	color:white;
+	background: url(../images/button_center_bg_down.gif);
+	background-repeat: repeat-x;
+}
+.buttonline_select{
+	border-top:1pt solid #7A98AF;
+	border-bottom:1pt solid #7A98AF;
+	background: url(../images/button_center_bg_select.gif);
+	background-repeat: repeat-x;
+}
+.buttonline_select_over{
+	border-top:1pt solid #7A98AF;
+	border-bottom:1pt solid #7A98AF;
+	background: url(../images/button_center_bg_select_over.gif);
+	background-repeat: repeat-x;
+}
+

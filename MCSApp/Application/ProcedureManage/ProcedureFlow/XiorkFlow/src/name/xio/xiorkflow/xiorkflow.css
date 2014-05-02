@@ -1,0 +1,139 @@
+v\: * {
+	behavior: url(#default#vml)
+}
+
+/**
+ * name.xio.xiorkflow.StatusLabel
+ */
+.NAME_XIO_XIORKFLOW_STATUS_LABEL {
+	border: 1px inset;
+	background-color: buttonface;
+	cursor: default;
+	height: 24px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
+
+/**
+ *
+ */
+.NAME_XIO_XIORKFLOW_VIEWER {
+	background-color: #fffff5;
+	background-image: url("workbg.gif");
+	overflow: scroll;
+	border: buttonface 10px solid;
+}
+
+/**
+ *
+ */
+.NAME_XIO_XIORKFLOW_METANODE {
+	position: absolute;
+	background-color: buttonface;
+	border-left: buttonhighlight 1px solid;
+	border-top: buttonhighlight 1px solid;
+	border-right: buttonshadow 1px solid;
+	border-bottom: buttonshadow 1px solid;
+}
+
+.NAME_XIO_XIORKFLOW_METANODE .TITLE {
+	height: 30px;
+}
+
+.NAME_XIO_XIORKFLOW_METANODE .TITLE .IMG {
+	width: 16px;
+	height: 16px;
+	display: inline;
+}
+
+.NAME_XIO_XIORKFLOW_METANODE .TITLE .TXT {
+	font-size: 12px;
+	display: inline;
+	background: transparent;
+}
+/*空节点样式*/
+.NAME_XIO_XIORKFLOW_EMPTYMETANODE {
+	position: absolute;
+	background-color: buttonface;
+	border-left: buttonhighlight 1px solid;
+	border-top: buttonhighlight 1px solid;
+	border-right: buttonshadow 1px solid;
+	border-bottom: buttonshadow 1px solid;
+}
+
+.NAME_XIO_XIORKFLOW_EMPTYMETANODE .TITLE {
+	height: 16px;
+}
+
+.NAME_XIO_XIORKFLOW_EMPTYMETANODE .TITLE .IMG {
+	width: 16px;
+	height: 16px;
+	display: inline;
+}
+
+.NAME_XIO_XIORKFLOW_EMPTYMETANODE .TITLE .TXT {
+	font-size: 12px;
+	display: inline;
+	background: transparent;
+}
+
+.BOUND_RECTANGLE {
+	display: block;
+}
+
+.BOUND_RECTANGLE_UNSELECTED {
+	display: none;
+}
+
+/**
+ *
+ */
+.NAME_XIO_XIORKFLOW_TALBE_VIEWER {
+	background-color: #fafafa;
+	padding: 20px;
+	overflow: scroll;
+	border: buttonface 10px solid;
+	font-size: 12px;
+}
+
+.NAME_XIO_XIORKFLOW_TABLE {
+	width: 100%;
+	border: #e0e0e0 1px solid;
+}
+
+.NAME_XIO_XIORKFLOW_TABLE td {
+	font-size: 12px;
+}
+
+.NAME_XIO_XIORKFLOW_TABLE .body td {
+	border: #e0e0e0 1px solid;
+	background-color: #f0f0f0;
+	height: 20px;
+}
+
+.NAME_XIO_XIORKFLOW_TABLE .head td {
+	background-color: buttonface;
+	border: 1px outset solid;
+	height: 24px;
+}
+
+/**
+ *
+ */
+.NAME_XIO_XIORKFLOW_XML_VIEWER {
+	background-color: #fafafa;
+	padding: 20px;
+	overflow: scroll;
+	border: buttonface 10px solid;
+	font-size: 12px;
+}
+
+.NAME_XIO_XIORKFLOW_XML_VIEWER pre {
+	color: #006699;
+	font-family: "courier new";
+	border: 1px solid #d0d0d0;
+	background-color: #f5f5f5;
+	padding: 10px;
+	margin: 10px;
+}

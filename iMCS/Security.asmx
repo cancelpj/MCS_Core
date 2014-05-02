@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="Security.asmx.cs" Class="FINGU.MCS.Security" %>

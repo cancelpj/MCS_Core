@@ -1,0 +1,530 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>XiorkFlow:WorkFlow Designer based javascript</title>
+
+		<meta http-equiv="keywords" content="xio">
+		<meta http-equiv="keywords" content="WorkFlow xio javascript">
+		<meta http-equiv="description" content="XiorkFlow is a WorkFlow Designer based javascript.">
+		<meta http-equiv="copyright" content="Copyright &copy;2006 www.xio.name">
+
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+		<link rel="stylesheet" type="text/css" href="../css/base.css">
+
+		<style>
+		<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:黑体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@黑体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-indent:10.0pt;
+	line-height:150%;
+	font-size:10.5pt;
+	font-family:Arial;
+	layout-grid-mode:line;}
+h1
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:center;
+	text-indent:-17.95pt;
+	line-height:150%;
+	page-break-before:always;
+	font-size:14.0pt;
+	font-family:Arial;
+	layout-grid-mode:line;}
+h2
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:center;
+	text-indent:0cm;
+	font-size:12.0pt;
+	font-family:Arial;
+	layout-grid-mode:line;}
+h3
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	font-size:10.5pt;
+	font-family:Arial;
+	layout-grid-mode:line;}
+h4
+	{margin-top:2.5pt;
+	margin-right:0cm;
+	margin-bottom:2.5pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	font-size:10.5pt;
+	font-family:Arial;
+	layout-grid-mode:line;}
+p.Bullet, li.Bullet, div.Bullet
+	{margin-top:6.0pt;
+	margin-right:18.0pt;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-19.85pt;
+	font-size:10.5pt;
+	font-family:Arial;
+	layout-grid-mode:line;}
+ /* Page Definitions */
+ @page Section1
+	{size:21.0cm 841.95pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+		</style>
+
+	</head>
+
+	<body>
+
+		<!--  wrapper start -->
+		<div id="wrapper">
+
+			<!--  header start -->
+			<div id="header">
+				<table cellpadding="0px" cellspacing="0px">
+					<tr>
+						<td>
+							<div id="logo">
+							</div>
+						</td>
+						<td id="bannercell">
+						</td>
+						<td id="websitecell">
+							<div id="website">
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!--  header end -->
+
+			<!--  main start -->
+			<div id="main">
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+
+						<td id="navcell" align="left" valign="top">
+							<!--  nav start -->
+							<div id="nav">
+								<div class="menu">
+									<div class="item">
+										<a href="../index.html">Home</a>
+									</div>
+									<div class="item">
+										<a href="../demo/index.html">Demo</a>
+									</div>
+									<div class="item selected">
+										<a href="../doc/index.html">Help</a>
+									</div>
+								</div>
+							</div>
+							<!--  nav end -->
+						</td>
+
+						<td id="contentcell" align="left" valign="top">
+							<!--  content start -->
+							<div id="content">
+
+								<div class=Section1>
+
+									<h1 style='margin-left:.05pt;text-indent:-18.0pt'>
+										<a name="_Toc144218883"><span lang=EN-US>XiorkFlow</span></a><span style='font-family:
+黑体'>使用帮助</span>
+									</h1>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span lang=EN-US>XiorkFlow</span><span style='font-family:宋体'>有友好的用户操作界面，完全可视化操作的界面。</span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>以下式</span><span lang=EN-US>XiorkFlow</span><span style='font-family:宋体'>的主操作界面：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=601 height=430 src="images/image001.jpg"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>如图，界面分为工具栏、可视化编辑区、表格浏览区、状态栏。</span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>下面，我们将详细介绍</span><span lang=EN-US>XiorkFlow</span><span style='font-family:宋体'>的的使用。</span>
+									</p>
+
+									<h2 style='margin-left:0cm;text-indent:0cm'>
+										<a name="_Toc144218884"><span lang=EN-US>§1.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:黑体'>节点添加</span></a>
+									</h2>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>节点包括开始节点、结束节点、任务几点、分支节点、汇聚节点。</span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>在工具栏上选择节点按钮，例如点击开始节点按钮：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=150 height=30 src="images/image002.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>当前为添加开始节点状态，在可视化编辑区内点击鼠标，完成添加节点：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=108 height=68 src="images/image003.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>其他节点的添加类似。</span>
+									</p>
+
+									<h2 style='margin-left:0cm;text-indent:0cm'>
+										<a name="_Toc144218885"><span lang=EN-US>§1.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:黑体'>节点连接</span></a>
+									</h2>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>节点连接是工作流节点的流向。</span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>要建立从“节点</span><span lang=EN-US>1</span><span style='font-family:宋体'>”到“节点</span><span lang=EN-US>2</span><span style='font-family:宋体'>”的连接，首先用鼠标点击“节点</span><span lang=EN-US>1</span><span style='font-family:宋体'>”上，如图：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=127 height=149 src="images/image004.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>这是在状态栏出现：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=194 height=62 src="images/image005.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>状态栏显示可以从“节点</span><span lang=EN-US>1</span><span style='font-family:宋体'>”建立连接，按住鼠标不放，将鼠标托拽到“节点</span><span lang=EN-US>2</span><span style='font-family:宋体'>”上：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=129 height=148 src="images/image006.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>这个时候状态栏出现：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=180 height=58 src="images/image007.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>状态栏显示可以到“节点</span><span lang=EN-US>2</span><span style='font-family:宋体'>”建立连接。</span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>放开鼠标，连接建立成功：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=128 height=147 src="images/image008.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>状态栏显示内容：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='margin-left:-.1pt;text-align:center;
+text-indent:0cm'>
+										<span lang=EN-US><img width=266 height=68 src="images/image009.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>节点与节点的连接有着一定的规则：</span>
+									</p>
+
+									<p class=Bullet style='text-indent:21.0pt'>
+										<span lang=EN-US style='font-family:
+Wingdings'>&sup2;<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span style='font-family:宋体'>开始节点：</span><span lang=EN-US>1</span><span style='font-family:宋体'>个起始点，</span><span lang=EN-US>0</span><span
+											style='font-family:宋体'>个终止点。</span>
+									</p>
+
+									<p class=Bullet style='text-indent:21.0pt'>
+										<span lang=EN-US style='font-family:
+Wingdings'>&sup2;<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span style='font-family:宋体'>结束节点：</span><span lang=EN-US>0</span><span style='font-family:宋体'>个起始点，</span><span lang=EN-US>1</span><span
+											style='font-family:宋体'>个终止点。</span>
+									</p>
+
+									<p class=Bullet style='text-indent:21.0pt'>
+										<span lang=EN-US style='font-family:
+Wingdings'>&sup2;<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span style='font-family:宋体'>任务节点：</span><span lang=EN-US>1</span><span style='font-family:宋体'>个起始点，一个终止点。</span>
+									</p>
+
+									<p class=Bullet style='text-indent:21.0pt'>
+										<span lang=EN-US style='font-family:
+Wingdings'>&sup2;<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span style='font-family:宋体'>分支节点：多个起始点，一个终止点。</span>
+									</p>
+
+									<p class=Bullet style='text-indent:21.0pt'>
+										<span lang=EN-US style='font-family:
+Wingdings'>&sup2;<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span style='font-family:宋体'>汇聚节点：一个起始点，多个终止点。</span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>只有满足这些规则的情况下，连接才能建立成功。</span>
+									</p>
+
+									<h2 style='margin-left:0cm;text-indent:0cm'>
+										<a name="_Toc144218886"><span lang=EN-US>§1.3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:黑体'>节点的选择</span></a>
+									</h2>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>选择节点，首先应该在工具栏上选择“选择”状态：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=209 height=28 src="images/image010.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>选择单个节点，仅需要在节点上点击：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=129 height=149 src="images/image011.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>节点被选择后，在节点的四周将出现蓝色方块。</span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>如果需要复选节点，按主“</span><span lang=EN-US>ctrl</span><span style='font-family:宋体'>”键，用鼠标在节点上点击，点击后改变节点的选择状态，如果节点已北选则置为未选择状态，如果节点为未选择状态，则置为选择状态。</span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>连接的选择类似。</span>
+									</p>
+
+									<h2 style='margin-left:0cm;text-indent:0cm'>
+										<a name="_Toc144218887"><span lang=EN-US>§1.4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:黑体'>移动</span></a>
+									</h2>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>选择工具栏的“选择”状态。</span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>选择需要移动的节点和连接，用鼠标托拽到目标位置，即可以完成移动。</span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>也可以使用键盘上的方向键，按下方向键，选择状态的节点和连接将根据方向键的方向移动。</span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>连接的位置由系统根据节点自动修正。</span>
+									</p>
+
+									<h2 style='margin-left:0cm;text-indent:0cm'>
+										<a name="_Toc144218888"><span lang=EN-US>§1.5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:黑体'>删除</span></a>
+									</h2>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>选择需要删除的节点和连接，按下工具栏的删除按钮：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=24 height=17 src="images/image012.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>或者按下键盘的“</span><span lang=EN-US>Delete</span><span style='font-family:宋体'>”键，即进行删除。</span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>删除前将进行删除确认，防止用户误删除：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=262 height=123 src="images/image013.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>确认删除后，将执行删除操作。</span>
+									</p>
+
+									<h2 style='margin-left:0cm;text-indent:0cm'>
+										<a name="_Toc144218889"><span lang=EN-US>§1.6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:黑体'>节点和连接的名称编辑</span></a>
+									</h2>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>节点和连接显示一个文本名称，在工具栏选择“选择”状态，双击节点或者连接，即可以修改他们的名称。</span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>双击节点，显示修改名称编辑框：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=228 height=91 src="images/image014.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>双击连接，显示修改名称编辑矿：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=472 height=70 src="images/image015.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>修改名称完成后，按“</span><span lang=EN-US>Enter</span><span style='font-family:宋体'>”回车键，或者鼠标在旁边点击，即完成编辑操作。</span>
+									</p>
+
+									<h2 style='margin-left:0cm;text-indent:0cm'>
+										<a name="_Toc144218890"><span lang=EN-US>§1.7<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:黑体'>视图模式</span></a>
+									</h2>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>视图模式包括：设计、表格、混合显示。在工具栏中进行选择：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=139 height=33 src="images/image016.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>设计模式下，工作区域将完全显示可视化编辑区：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=601 height=429 src="images/image017.jpg"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>表格模式下，工作区域将完全显示表格数据：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=601 height=429 src="images/image018.jpg"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>混合显示模式下，工作区域将同时显示可视化编辑区和表格数据：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=601 height=429 src="images/image019.jpg"></span>
+									</p>
+
+									<h2 style='margin-left:0cm;text-indent:0cm'>
+										<a name="_Toc144218891"><span lang=EN-US>§1.8<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:黑体'>保存</span></a>
+									</h2>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>工作流程图的保存时，按下工具栏的保存按钮：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=59 height=32 src="images/image020.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>系统将根据当前状态进行保存。</span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>如果是添加工作流程图模式，将执行添加操作；如果是编辑状态，则执行更新操作。</span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>操作结束后将弹出操作结果的信息窗口。</span>
+									</p>
+
+									<h3 style='margin-left:0cm;text-indent:0cm'>
+										<a name="_Toc144218892"><span lang=EN-US>1.8.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:黑体'>添加</span></a>
+									</h3>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>首先，系统询问工作流程图将要保存成的名称：</span>
+									</p>
+
+									<p class=MsoNormal align=center style='text-align:center;text-indent:0cm'>
+										<span lang=EN-US><img width=488 height=125 src="images/image021.gif"></span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>输入名称后，点击“确定”按钮。系统执行保存。</span>
+									</p>
+
+									<h3 style='margin-left:0cm;text-indent:0cm'>
+										<a name="_Toc144218893"><span lang=EN-US>1.8.2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style='font-family:黑体'>更新</span></a>
+									</h3>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span style='font-family:宋体'>如果是更新，系统将对原有的工作流程图进行更新。</span>
+									</p>
+
+									<p class=MsoNormal style='text-indent:21.0pt'>
+										<span lang=EN-US>&nbsp;</span>
+									</p>
+
+								</div>
+
+							</div>
+							<!--  content end -->
+						</td>
+
+					</tr>
+				</table>
+			</div>
+			<!--  main end -->
+
+			<!--  foot start -->
+			<div id="foot">
+				Copyright &copy; 2006 www.xio.name All Rights Reserved.
+			</div>
+			<!--  foot end -->
+
+		</div>
+		<!--  wrapper end -->
+
+	</body>
+</html>

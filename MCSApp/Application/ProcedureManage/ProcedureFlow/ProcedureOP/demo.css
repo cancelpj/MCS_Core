@@ -1,0 +1,49 @@
+#addprocess {
+	margin-left: 40px;
+}
+
+#addprocess a {
+	color: ff6622;
+	font-weight: bold;
+}
+
+#processlist {
+	margin: 10px;
+	border: #e0e0e0 1px solid;
+}
+
+#processlist .head {
+	background-color: #f0f0f0;
+	border: #e0e0e0 1px solid;
+	height: 24px;
+	font-weight: bold;
+}
+
+#processlist .body {
+	background-color: #fafafa;
+	border: #e0e0e0 1px solid;
+	height: 24px;
+}
+
+#processlist .name {
+	padding-left: 10px;
+	width: 300px;
+}
+
+#processlist a:hover {
+	color: ff6622;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#processlist .view {
+	width: 80px;
+}
+
+#processlist .del {
+	width: 80px;
+}
+
+#processlist .edit {
+	width: 80px;
+}

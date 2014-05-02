@@ -1,0 +1,153 @@
+
+<PUBLIC:COMPONENT>
+	<property name=speed />
+	<PUBLIC:ATTACH EVENT="oncontentready"   ONEVENT="fnInit()"   />
+	<PUBLIC:ATTACH EVENT="onresize"   ONEVENT="fnInit()"   />
+	<PUBLIC:ATTACH EVENT="onclick"                 ONEVENT="fnClick()"   />
+	<PUBLIC:ATTACH EVENT="ondragstart"         ONEVENT="fnCancel()" />
+	<METHOD NAME="menubarpush"/>
+	<SCRIPT LANGUAGE="JScript">
+ //   window.onerror = function fnNoOp() {return true; };
+		// globals
+		var timer1 = null;
+		var CHeight;
+		var menubarsum;
+		var menuchoose=0;
+		var speed=30;
+		var menubarheight=25;
+		var currentshowc=null;
+		/*****************************************************
+		初始化
+		*****************************************************/
+		function fnInit()
+		{
+			element.parts = fnGetPartArray();	 //取得所有组
+			menubarsum = element.parts.length;
+			CHeight=element.clientHeight - menubarheight*menubarsum;
+			var currentbar=fnGetBar( element.parts[menuchoose] );
+			currentbar.className='barcontent1';
+			currentbar.style.pixelHeight=CHeight;
+		}
+		/*****************************************************
+		滚动
+		*****************************************************/
+		function menubarpush(num)
+		{
+			if (num != menuchoose && num >= 0 && num < menubarsum) {
+				var barNext=fnGetBar(element.parts[num]);
+				var barPre=fnGetBar( element.parts[menuchoose] );
+				barPre.style.pixelHeight-=speed;
+				barNext.style.pixelHeight+=speed;
+				barNext.className='barcontent1';
+				if(barPre.style.pixelHeight<=0 || barNext.style.pixelHeight>CHeight-speed){
+					barPre.className='barcontent';
+					barPre.style.pixelHeight=0;
+					barNext.style.pixelHeight=CHeight;
+					clearInterval(timer1);
+					timer1 = null;
+					menuchoose = num;
+					return;
+				}
+			}
+		}
+		/*****************************************************
+		鼠标点击
+		*****************************************************/
+		function fnClick()
+		{
+			var oEl = event.srcElement;
+			if(oEl.className=="bartitle")
+			{
+				num = fnGetID(fnGetPart(oEl));
+				if(timer1 != null || num == menuchoose || num == -1)return;
+				timer1=window.setInterval(uniqueID+".menubarpush("+num+")",1);
+			}
+
+			if(oEl.tagName == "TD" && oEl.parentElement.className=="clstr")
+			{
+				while( null != oEl && oEl.className != "clstr" )
+				{
+					oEl = oEl.parentElement;
+				}
+				if(oEl.className != "clstr") return;
+				oEl = oEl.parentElement.parentElement;
+				if(currentshowc != null && currentshowc != oEl)
+					controlshowhide(currentshowc);
+				controlshowhide(oEl)
+			}
+
+		}
+		function controlshowhide(oEl)
+		{
+			try{
+			if(oEl.rows[1].stats=="open"){
+				oEl.rows[0].cells[0].children[0].style.filter="progid:DXImageTransform.Microsoft.BasicImage( Rotation=0)";
+				oEl.rows[1].className="clstrc";
+				oEl.rows[1].stats="close";
+				currentshowc = null;
+			}
+			else{
+				currentshowc = null;
+				oEl.rows[0].cells[0].children[0].style.filter="progid:DXImageTransform.Microsoft.BasicImage( Rotation=1)";
+				oEl.rows[1].className="clstrcshow";
+				oEl.rows[1].stats="open";
+				currentshowc = oEl;
+			}
+		}
+		catch(e){return false;
+		}
+		}
+		/*****************************************************
+		返回编号
+		*****************************************************/
+		function fnGetID(obj)
+		{
+			for(var i=0;i<element.parts.length;i++)
+			{
+				if(element.parts[i]==obj)
+					return i;
+			}
+			return -1;
+		}
+		/*****************************************************
+		返回所有组
+		*****************************************************/
+    function fnGetPartArray()
+    {
+			var oParts = element.all.tags( "DIV" );
+			var oReturn = new Array();
+			for( var i = 0; i < oParts.length; i++ )
+			{
+				if( oParts[i].className == "clsPart" )
+				{
+					oReturn[oReturn.length] = oParts[i];
+				}
+			}
+			return oReturn;
+	}
+		/*****************************************************
+		返回父/子
+		*****************************************************/
+		function fnGetPart( oEl )
+		{
+		while( null != oEl && oEl.className != "clsPart" )
+		{
+			oEl = oEl.parentElement;
+		}
+		return oEl;
+		}
+		function fnGetBar( oEl )
+		{
+			oEl = oEl.children[1];
+		return oEl;
+		}
+
+		/*****************************************************
+		禁止拖动
+		*****************************************************/
+    function fnCancel()
+    {
+        window.event.returnValue = false;
+    }
+   </SCRIPT>
+</PUBLIC:COMPONENT>

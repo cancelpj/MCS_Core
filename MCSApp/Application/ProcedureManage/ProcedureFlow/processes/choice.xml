@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkflowProcess>
+  <Activities>
+    <Activitie id="1" type="START_NODE" name="Start" xCoordinate="20" yCoordinate="100" width="80" height="30"></Activitie>
+    <Activitie id="2" type="END_NODE" name="EndNode" xCoordinate="460" yCoordinate="170" width="80" height="30"></Activitie>
+    <Activitie id="3" type="FORK_NODE" name="Make Choice" xCoordinate="200" yCoordinate="100" width="121" height="30"></Activitie>
+    <Activitie id="4" type="END_NODE" name="EndNode" xCoordinate="460" yCoordinate="100" width="80" height="30"></Activitie>
+    <Activitie id="5" type="END_NODE" name="EndNode" xCoordinate="460" yCoordinate="20" width="80" height="30"></Activitie>
+  </Activities>
+  <Transitions>
+    <Transition id="6" name="Arrow1" from="1" to="3"></Transition>
+    <Transition id="7" name="Choice1" from="3" to="2"></Transition>
+    <Transition id="8" name="Choice2" from="3" to="4"></Transition>
+    <Transition id="9" name="Choice" from="3" to="5"></Transition>
+  </Transitions>
+</WorkflowProcess>
+

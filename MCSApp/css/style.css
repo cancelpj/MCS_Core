@@ -1,0 +1,153 @@
+a{
+	behavior:url(../Link.htc);
+}
+a:link,a:visited	{
+	text-decoration: none;
+	color: #111111; 
+}
+a:hover			{ text-decoration: underline }
+body			{ margin-top:20px; scrollbar-base-color: #E4EAF2; scrollbar-arrow-color: #FFFFFF; font-size: 12px; background-color: #F3F4F6 }
+Stable			{ font-family: Tahoma, Verdana; color: #111111; font-size: 12px }
+textarea,input,object	{ font-family: Tahoma, Verdana; font-size: 12px;  color: #111111; font-weight: normal; background-color: #E4EAF2 }
+select			{ font-family: 12px; font-size: 12px;  color: #111111; font-weight: normal; background-color: #E4EAF2 }
+form			{ margin: 0px; }
+.nav			{ font-family: Tahoma, Verdana; font-size: 12px; font-weight: bold }
+.navtd			{ font-family: Tahoma, Verdana; font-size: 12px; color: #FFFFFF; font-weight: normal; text-decoration: none; }
+.header			{ font-family: Tahoma, Verdana; font-size: 12px; color: #FFFFFF; font-weight: bold; background-image: url("../images/catbg.gif") }
+.category		{ font-family: 12px; font-size: 12px; color: #000000; background-image: url("../images/headerbg.gif") }
+.multi			{ font-family: 12px; font-size: 12px; color: #111111; }
+.smalltxt		{ font-family: 12px; font-size: 12px }
+.mediumtxt		{ font-family: Tahoma, Verdana; font-size: 12px; color: #111111 }
+.bold			{ font-weight: bold }
+.titleBar {
+	font-family: 宋体;
+	font-size: 12px;
+	color: #006600;
+	background-color: #EAF0F4;
+}
+.mainBody 
+{
+background-image: url(../images/main_bg.gif);
+background-position: center;
+background-attachment: fixed;
+background-position: bottom;
+FONT-SIZE: 9pt;background-color: #FFFFFF;
+}
+.tableRow
+{
+	font-size: 12px;
+	color: #ffffff;
+	font-family: 宋体;
+	background-color: #5D709D;
+	
+}
+
+.tableFont {
+	font-family: 宋体;
+	font-size: 12px;
+	BACKGROUND-COLOR: transparent;
+
+}
+
+.tableFace {
+	font-family: 宋体;
+	font-size: 12px;
+
+	border: 1px solid #FFFFFF;
+}
+.GridViewStyle
+{   
+    border-right: 2px solid #A7A6AA;
+    border-bottom: 2px solid #A7A6AA;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    padding: 4px;
+    font-size:12px;
+}
+
+.GridViewStyle a
+{
+    color: #FFFFFF;
+    font-size:12px;
+}
+
+.GridViewHeaderStyle th
+{
+    border-left: 1px solid #EBE9ED;
+    border-right: 1px solid #EBE9ED;
+    font-size:12px;
+}
+
+.GridViewHeaderStyle
+{
+    background-color: #5D7B9D;
+    font-weight: bold;
+    color: White;
+    font-size:12px;
+}
+
+.GridViewFooterStyle
+{
+    background-color: #5D7B9D;
+    font-weight: bold;
+    color: White;
+    font-size:12px;
+}
+
+.GridViewRowStyle
+{
+    background-color: #F7F6F3;
+    color: #333333;
+    font-size:12px;
+}
+
+.GridViewAlternatingRowStyle
+{
+    background-color: #FFFFFF;
+    color: #284775;
+    font-size:12px;
+}
+
+.GridViewRowStyle td, .GridViewAlternatingRowStyle td
+{
+    border: 1px solid #EBE9ED;
+    font-size:12px;
+}
+
+.GridViewSelectedRowStyle
+{
+    background-color: #E2DED6;
+    font-weight: bold;
+    color: #333333;
+    font-size:12px;
+}
+
+.GridViewPagerStyle
+{
+    background-color: #284775;
+    color:White;
+    font-size:12px;
+}
+
+.GridViewPagerStyle tablenocenter /**//* to center the paging links*/
+{
+    margin: 0 auto 0 ;    
+    font-size:12px;
+}
+.GridViewPagerStyle table tr td span /**//* to center the paging links*/
+{
+    margin: 0 auto 0 auto; 
+    color:White;
+    font-weight:bold; 
+    font-size:14px;
+}
+.GridViewPagerStyle table tr td a /**//* to center the paging links*/
+{
+    margin: 0 auto 0 auto; 
+    color:Yellow;  
+    font-size:12px;
+}
+.table90   {font-size:12px;border:1px   solid   #000000   ;border-collapse:collapse;}   
+  .table90   td{border:1px   solid   #000000   }
+  .table90   tr{ background-color:expression('#EBE9ED,#F7F6F3'.split(',')[rowIndex%2]);line-height:20px }
+  .table90   table   td{border:1px   solid   #ffff00   } 

@@ -1,0 +1,190 @@
+﻿unit produce_bz_bgtmsm;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, DB, ADODB, StdCtrls, Buttons, Grids, DBGrids, ComCtrls, ExtCtrls,DateUtils,
+  cxGraphics, cxControls, dxStatusBar, GridsEh, DBGridEh, DBSumLst,XSBuiltIns,
+  cxCustomData, cxStyles, cxTL, cxTextEdit, cxInplaceContainer;
+
+type
+  Tbz_bgtmsm = class(TForm)
+    BitBtn3: TBitBtn;
+    statusbar1: TdxStatusBar;
+    GroupBox3: TGroupBox;
+    Label6: TLabel;
+    Edit6: TEdit;
+    cxTreeList1: TcxTreeList;
+    cxTreeList1cxTreeListColumn1: TcxTreeListColumn;
+    cxTreeList1cxTreeListColumn2: TcxTreeListColumn;
+    cxTreeList1cxTreeListColumn3: TcxTreeListColumn;
+    cxTreeList1cxTreeListColumn4: TcxTreeListColumn;
+    procedure BitBtn3Click(Sender: TObject);
+    procedure Edit6KeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormCreate(Sender: TObject);
+  private
+    sa_cp,sa_mc,sa_dm:string;
+  public
+
+  end;
+
+var
+  bz_bgtmsm: Tbz_bgtmsm;
+
+implementation
+
+uses produce_data, produce_public, produce_zz_bgtmsm;
+
+
+
+{$R *.dfm}
+
+procedure Tbz_bgtmsm.BitBtn3Click(Sender: TObject);
+begin
+  close;
+end;
+
+
+
+
+
+
+
+
+
+procedure Tbz_bgtmsm.Edit6KeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+function chktm(tm:string;user:string):boolean;
+var ret:boolean;
+    pmsg:widestring;
+begin
+    if not iprocedurectrl.CheckModelByBarCode(tm,user,1) then
+    begin
+       messagedlg('当前扫描产品不是当前计划生产产品',mtwarning,[mbok],0);
+       chktm:=false;
+       exit;
+    end;
+    iprocedurectrl.CheckProcedure(tm,cur_gxmc,0,ret,pmsg);
+    if not ret then
+    begin
+        messagedlg(pmsg,mtwarning,[mbok],0);
+        chktm:=false;
+        exit;
+    end;
+    chktm:=true;
+end;
+var mbjtm,muserid:string;
+    mdate:txsdatetime;
+    sftt:boolean;
+    pmsg:widestring;
+    cxsql:tadoquery;
+    mnode:tcxtreelistnode;
+begin
+  if key=13 then
+  begin
+     if trim(edit6.text)='' then exit;
+     mbjtm:=trim(edit6.text);
+     muserid:=produce_public.login_user;
+
+      // 记录当前扫描产品、名称、代码  第一次扫描或切换产品时
+     cxsql:=tadoquery.Create(self);
+     try
+        cxsql.Connection:=data.connect;
+        cxsql.SQL.clear;
+        cxsql.SQL.Add('select getdate() as nowdate');
+        cxsql.Open;
+        mdate:=txsdatetime.Create;
+        mdate.AsDateTime:=cxsql.fieldbyname('nowdate').AsDateTime;
+
+        if (sa_cp='') or (sa_cp<>copy(mbjtm,1,length(mbjtm)-m_tmcd)) then
+        begin
+           sa_cp:=copy(mbjtm,1,length(mbjtm)-m_tmcd);
+           cxsql.SQL.Clear;
+           cxsql.SQL.add('select name,code from ta_model where id=:pid');
+           cxsql.Parameters.ParamByName('pid').Value:=sa_cp;
+           cxsql.ExecSQL;
+           cxsql.Open;
+           if not cxsql.FieldByName('name').IsNull then
+           begin
+              sa_mc:=cxsql.fieldbyname('name').AsString;
+              sa_dm:=cxsql.fieldbyname('code').AsString;
+           end
+           else
+           begin
+              sa_mc:='';
+              sa_dm:='';
+           end;
+        end;
+     finally
+        cxsql.Free;
+     end;
+     if chktm(mbjtm,muserid) then
+     begin
+        // 记录工艺流程信息
+        iprocedurectrl.SaveProcessBegin(mbjtm,cur_gxmc,muserid,mdate,sftt,pmsg);
+        if not sftt then
+        begin
+           messagedlg(pmsg,mtwarning,[mbok],0);
+           edit6.Text:='';
+           exit;
+        end;
+        edit6.Text:='';
+        mnode:=cxtreelist1.Add;
+        mnode.Values[0]:=mbjtm;
+        mnode.Values[1]:=sa_mc;
+        mnode.Values[2]:=sa_dm;
+        mnode.Values[3]:=formatdatetime('yyyy-mm-dd hh:mm:ss',mdate.AsDateTime);
+     end
+     else
+     begin
+        edit6.Text:='';
+     end;  
+  end;
+end;
+
+
+
+
+
+
+
+
+
+
+
+procedure Tbz_bgtmsm.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  action:=cafree;
+  zz_bgtmsm:=nil;
+end;
+
+procedure Tbz_bgtmsm.FormCreate(Sender: TObject);
+var mnode:tcxtreelistnode;
+    dwsql:tadoquery;
+begin
+    cxtreelist1.Clear;
+    dwsql:=tadoquery.Create(self);
+    try
+       dwsql.Connection:=data.connect;
+       dwsql.SQL.Clear;
+       dwsql.SQL.Add('select productid,begintime from tb_procedurehistory where process='+quotedstr(cur_gxmc)+' and employeeid='+quotedstr(login_user)+' and convert(char(10),begintime,20) like convert(char(10),getdate(),20)+''%''');
+       dwsql.ExecSQL;
+       dwsql.Open;
+       dwsql.First;
+       while not dwsql.Eof do
+       begin
+           mnode:=cxtreelist1.Add;
+           mnode.Values[0]:=trim(dwsql.fieldbyname('productid').AsString);
+           mnode.Values[2]:=copy(trim(dwsql.fieldbyname('productid').AsString),1,length(trim(dwsql.fieldbyname('productid').AsString))-m_tmcd);
+           mnode.Values[3]:=trim(dwsql.fieldbyname('begintime').AsString);
+           dwsql.Next;
+       end;
+    finally
+       dwsql.Free;
+    end;
+end;
+
+end.

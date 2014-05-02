@@ -1,0 +1,903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7FDACF5A-CBE1-4992-9941-EA8D6A12CA70}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MCSApp</RootNamespace>
+    <AssemblyName>MCSApp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Coolite.Ext.Web, Version=0.8.1.2802, Culture=neutral, PublicKeyToken=f58c952e9aa5b80a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\RDOA\BLL\bin\Debug\Coolite.Ext.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Application\ProcedureManage\ProcedureFlow\BorrowProcedure.aspx" />
+    <Content Include="Application\EmployeeManage\ChangePassword.aspx" />
+    <Content Include="Application\EmployeeManage\EmployeeForQuery.aspx" />
+    <Content Include="Application\EmployeeManage\GroupDispatch.aspx" />
+    <Content Include="Application\EmployeeManage\GroupPage.aspx" />
+    <Content Include="Application\EmployeeManage\ManageGroup.aspx" />
+    <Content Include="Application\EmployeeManage\patchAddEmployee.aspx" />
+    <Content Include="Application\EmployeeManage\GroupMaterial.aspx" />
+    <Content Include="Application\PlanManage\ActiveOrClosePlan.aspx" />
+    <Content Include="Application\PlanManage\MakePlan.aspx" />
+    <Content Include="Application\PlanManage\QueryPlan.aspx" />
+    <Content Include="Application\EmployeeManage\RoleDispatch.aspx" />
+    <Content Include="Application\EmployeeManage\UserInfor.aspx" />
+    <Content Include="Application\PlanManage\selectPlanProcedure.aspx" />
+    <Content Include="Application\ProcedureManage\ComOrMatChange.aspx" />
+    <Content Include="Application\ProcedureManage\CustomerReturn.aspx" />
+    <Content Include="Application\ProcedureManage\PermitRetesting.aspx" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\css\base.css" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\ProcedureOP\addprocess.html" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\ProcedureOP\addprocess.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\ProcedureOP\deleteprocess.html" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\ProcedureOP\deleteprocess.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\ProcedureOP\demo.css" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\ProcedureOP\index.html" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\ProcedureOP\index.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\ProcedureOP\Tip.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\ProcedureOP\updateprocess.html" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\ProcedureOP\updateprocess.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\ProcedureOP\viewprocess.html" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\ProcedureOP\viewprocess.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image001.jpg" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image002.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image003.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image004.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image005.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image006.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image007.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image008.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image009.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image010.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image011.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image012.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image013.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image014.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image015.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image016.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image017.jpg" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image018.jpg" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image019.jpg" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image020.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\images\image021.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\doc\index.html" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\images\logo.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\images\xiorkflow.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\index.html" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\ProcedureList.aspx" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\processes\choice.xml" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\processes\default.xml" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\processes\DealWithXMLData.aspx" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\TestSoft.aspx" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\checkvalidity.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\delete.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\end.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\fork.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\help.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\home.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\join.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\metanode.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\node.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\print.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\rectangle.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\save.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\select.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\start.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\transition.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\empty.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\images\xiorkflow\range.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\js\XiorkFlowWorkSpace.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ajax\Ajax.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\geom\Point.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\geom\ui\GeometryCanvas.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\geom\ui\LineTextView.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\geom\ui\LineView.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\html\Browser.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\html\Cursor.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\html\MouseEvent.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\html\Toolkit.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\Button.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\ButtonGroup.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\ButtonModel.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\Component.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\Dimension.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\event\ActionListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\event\ContextMenuListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\event\KeyListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\event\ListenerProxy.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\event\MouseListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\event\MouseWheelListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\Frame.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\Label.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\Panel.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\ScrollPanel.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\ToggleButton.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\ToggleButtonModel.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\ToolBar.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\ui\ui.css" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\util\Array.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\util\List.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\util\Message.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\util\Observable.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\util\Observer.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\util\String.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\event\DeleteMetaActionListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\event\HelpActionListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\event\MetaMoveKeyListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\event\MetaMoveMouseListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\event\SaveActionListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\event\WrapperMetaMouseListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\event\WrapperSelectMouseListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\event\WrapperTransitionMouseListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\DragablePanel.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\EndNode.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\EndNodeModel.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\event\MetaNodeMouseListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\event\MetaNodeResizeMouseListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\event\MetaNodeTextKeyListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\event\MetaNodeTextMouseListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\event\TransitionMouseListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\event\TransitionTextKeyListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\event\TransitionTextMouseListener.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\ForkNode.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\ForkNodeModel.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\JoinNode.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\JoinNodeModel.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\MetaModel.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\MetaNode.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\MetaNodeModel.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\Node.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\NodeModel.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\StartNode.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\StartNodeModel.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\Transition.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\TransitionCompass.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\TransitionModel.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\EmptyNode.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\EmptyNodeModel.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\meta\EmptyMetaNode.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\process\AddProcess.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\process\GetProcess.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\process\UpdateProcess.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\StateMonitor.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\StatusLabel.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\TransitionMonitor.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\workbg.gif" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\xiorkflow.css" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\XiorkFlow.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\XiorkFlowModel.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\XiorkFlowModelConverter.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\XiorkFlowTableViewer.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\XiorkFlowToolBar.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\XiorkFlowViewer.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\XiorkFlowViewPattern.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\XiorkFlowWrapper.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xiorkflow\XiorkFlowXMLViewer.js" />
+    <Content Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\src\name\xio\xml\XMLDocument.js" />
+    <Content Include="Application\ProcedureManage\ProcedureTrace.aspx" />
+    <Content Include="Application\ProcedureManage\RepairRecord.aspx" />
+    <Content Include="Application\ProductManage\ProcedureScan.aspx" />
+    <Content Include="Application\ProductManage\BindProduct.aspx" />
+    <Content Include="Application\ProductManage\ComponentArchives.aspx" />
+    <Content Include="Application\ProductManage\InputProductSN.aspx" />
+    <Content Include="Application\ProductManage\MatierialArchives.aspx" />
+    <Content Include="Application\ProductManage\ModelDetail.aspx" />
+    <Content Include="Application\ProductManage\ModelList.aspx" />
+    <Content Include="Application\ProductManage\ProductArchives.aspx" />
+    <Content Include="Application\ProductManage\productStructure.aspx" />
+    <Content Include="Application\ProductManage\ProductToEmpty.aspx" />
+    <Content Include="Application\ProductManage\ProductTrace.aspx" />
+    <Content Include="Application\ProductManage\ProductVersionUpdate.aspx" />
+    <Content Include="Application\ProductManage\QueryModel.aspx" />
+    <Content Include="Application\QueryManage\BugPointStatistics.aspx" />
+    <Content Include="Application\QueryManage\BugTypeStatistics.aspx" />
+    <Content Include="Application\QueryManage\DataDetail.aspx" />
+    <Content Include="Application\QueryManage\ProcedureData.aspx" />
+    <Content Include="Application\QueryManage\ProduceBoard.aspx" />
+    <Content Include="Application\QueryManage\ProduceEfficiency.aspx" />
+    <Content Include="Application\QueryManage\ProduceFinished.aspx" />
+    <Content Include="Application\QueryManage\ProductQuality.aspx" />
+    <Content Include="Application\QueryManage\RepairRecordInfo.aspx" />
+    <Content Include="Application\QueryManage\SingleProductInfo.aspx" />
+    <Content Include="Application\SystemManage\BugPoint.aspx" />
+    <Content Include="Application\SystemManage\BugType.aspx" />
+    <Content Include="Application\SystemManage\EventPage.aspx" />
+    <Content Include="Application\SystemManage\SoftwareVersion.aspx" />
+    <Content Include="Common\LeftMenuItem.ascx" />
+    <Content Include="Common\ToExcelPage.aspx" />
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="images\Arrow1.gif" />
+    <Content Include="images\Arrow11.gif" />
+    <Content Include="images\Arrow2.gif" />
+    <Content Include="images\body_bg.jpg" />
+    <Content Include="images\button_center_bg.gif" />
+    <Content Include="images\button_center_bg_down.gif" />
+    <Content Include="images\button_center_bg_over.gif" />
+    <Content Include="images\button_center_bg_select.gif" />
+    <Content Include="images\button_center_bg_select_over.gif" />
+    <Content Include="images\button_left.gif" />
+    <Content Include="images\button_left_down.gif" />
+    <Content Include="images\button_left_over.gif" />
+    <Content Include="images\button_left_select.gif" />
+    <Content Include="images\button_left_select_over.gif" />
+    <Content Include="images\button_right.gif" />
+    <Content Include="images\button_right_down.gif" />
+    <Content Include="images\button_right_over.gif" />
+    <Content Include="images\button_right_select.gif" />
+    <Content Include="images\button_right_select_over.gif" />
+    <Content Include="images\Calendar_scheduleHS.png" />
+    <Content Include="images\cancel.gif" />
+    <Content Include="images\catbg.gif" />
+    <Content Include="images\close.gif" />
+    <Content Include="images\close_all.gif" />
+    <Content Include="images\close_all_over.gif" />
+    <Content Include="images\close_down.gif" />
+    <Content Include="images\close_over.gif" />
+    <Content Include="images\corner_01.gif" />
+    <Content Include="images\corner_02.gif" />
+    <Content Include="images\corner_03.gif" />
+    <Content Include="images\corner_04.gif" />
+    <Content Include="images\corner_05.gif" />
+    <Content Include="images\corner_06.gif" />
+    <Content Include="images\corner_07.gif" />
+    <Content Include="images\corner_08.gif" />
+    <Content Include="images\delete.gif" />
+    <Content Include="images\edit.gif" />
+    <Content Include="images\fingu.jpg" />
+    <Content Include="images\fingu.swf" />
+    <Content Include="images\headerbg.gif" />
+    <Content Include="images\icon\controltoolbar.gif" />
+    <Content Include="images\icon\Copy of controltoolbar.gif" />
+    <Content Include="images\icon\Copy of search.gif" />
+    <Content Include="images\icon\search.gif" />
+    <Content Include="images\imgForWin\back.gif" />
+    <Content Include="images\imgForWin\border.gif" />
+    <Content Include="images\imgForWin\bottom.gif" />
+    <Content Include="images\imgForWin\close.gif" />
+    <Content Include="images\imgForWin\forward.gif" />
+    <Content Include="images\imgForWin\grip.gif" />
+    <Content Include="images\imgForWin\help.gif" />
+    <Content Include="images\imgForWin\intern.gif" />
+    <Content Include="images\imgForWin\loading.gif" />
+    <Content Include="images\imgForWin\loading.htm" />
+    <Content Include="images\imgForWin\max.gif" />
+    <Content Include="images\imgForWin\min.gif" />
+    <Content Include="images\imgForWin\symbol.gif" />
+    <Content Include="images\imgForWin\title.gif" />
+    <Content Include="images\index_r10_c1.jpg" />
+    <Content Include="images\index_r2_c1.jpg" />
+    <Content Include="images\index_r3_c1.jpg" />
+    <Content Include="images\index_r4_c1.jpg" />
+    <Content Include="images\index_r5_c1.gif" />
+    <Content Include="images\index_r6_c1.jpg" />
+    <Content Include="images\index_r7_c1.jpg" />
+    <Content Include="images\index_r8_c1.jpg" />
+    <Content Include="images\index_r9_c1.jpg" />
+    <Content Include="images\login_08.gif" />
+    <Content Include="images\md5.js" />
+    <Content Include="images\search.gif" />
+    <Content Include="images\seperate.gif" />
+    <Content Include="images\seperate_line_bg.gif" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="images\tab1.gif" />
+    <Content Include="images\tab2.gif" />
+    <Content Include="images\title_bg.gif" />
+    <Content Include="images\toolbar_bg.gif" />
+    <Content Include="images\update.gif" />
+    <Content Include="images\work.gif" />
+    <Content Include="Main\button.htc" />
+    <Content Include="Main\button.htm" />
+    <Content Include="Main\main.aspx" />
+    <Content Include="Main\top.aspx" />
+    <Content Include="Main\Working.htm" />
+    <Content Include="Main\index.htm" />
+    <Content Include="Main\left.aspx" />
+    <Content Include="Main\left.htm" />
+    <Content Include="Main\Link.htc" />
+    <Content Include="Main\main.htm" />
+    <Content Include="Main\menubar.htc" />
+    <Content Include="Main\public.js" />
+    <Content Include="Main\style.css" />
+    <Content Include="Main\top.htm" />
+    <Content Include="Main\index.aspx" />
+    <Content Include="scripts\Common.js" />
+    <Content Include="scripts\CustomWin.js" />
+    <Content Include="scripts\CustomWin1.js" />
+    <Content Include="scripts\FlowMenu.js" />
+    <Content Include="scripts\FlowWin.js" />
+    <Content Include="scripts\JSDate.js" />
+    <Content Include="scripts\MdiWin.js" />
+    <Content Include="scripts\VML.js" />
+    <None Include="Web References\WSSecurity\Security.disco" />
+    <None Include="Web References\WSProcedureCtrl\ProcedureCtrl.disco" />
+    <None Include="Web References\WSProductTrace\ProductTrace.disco" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\ProcedureManage\ProcedureFlow\BorrowProcedure.aspx.cs">
+      <DependentUpon>BorrowProcedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\ProcedureFlow\BorrowProcedure.aspx.designer.cs">
+      <DependentUpon>BorrowProcedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\EmployeeForQuery.aspx.cs">
+      <DependentUpon>EmployeeForQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\EmployeeForQuery.aspx.designer.cs">
+      <DependentUpon>EmployeeForQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\GroupDispatch.aspx.cs">
+      <DependentUpon>GroupDispatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\GroupDispatch.aspx.designer.cs">
+      <DependentUpon>GroupDispatch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\GroupPage.aspx.cs">
+      <DependentUpon>GroupPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\GroupPage.aspx.designer.cs">
+      <DependentUpon>GroupPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\ManageGroup.aspx.cs">
+      <DependentUpon>ManageGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\ManageGroup.aspx.designer.cs">
+      <DependentUpon>ManageGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\patchAddEmployee.aspx.cs">
+      <DependentUpon>patchAddEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\patchAddEmployee.aspx.designer.cs">
+      <DependentUpon>patchAddEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\GroupMaterial.aspx.cs">
+      <DependentUpon>GroupMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\GroupMaterial.aspx.designer.cs">
+      <DependentUpon>GroupMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\PlanManage\ActiveOrClosePlan.aspx.cs">
+      <DependentUpon>ActiveOrClosePlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\PlanManage\ActiveOrClosePlan.aspx.designer.cs">
+      <DependentUpon>ActiveOrClosePlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\PlanManage\MakePlan.aspx.cs">
+      <DependentUpon>MakePlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\PlanManage\MakePlan.aspx.designer.cs">
+      <DependentUpon>MakePlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\PlanManage\QueryPlan.aspx.cs">
+      <DependentUpon>QueryPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\PlanManage\QueryPlan.aspx.designer.cs">
+      <DependentUpon>QueryPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\RoleDispatch.aspx.cs">
+      <DependentUpon>RoleDispatch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\RoleDispatch.aspx.designer.cs">
+      <DependentUpon>RoleDispatch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\UserInfor.aspx.cs">
+      <DependentUpon>UserInfor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\EmployeeManage\UserInfor.aspx.designer.cs">
+      <DependentUpon>UserInfor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\PlanManage\selectPlanProcedure.aspx.cs">
+      <DependentUpon>selectPlanProcedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\PlanManage\selectPlanProcedure.aspx.designer.cs">
+      <DependentUpon>selectPlanProcedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\ComOrMatChange.aspx.cs">
+      <DependentUpon>ComOrMatChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\ComOrMatChange.aspx.designer.cs">
+      <DependentUpon>ComOrMatChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\CustomerReturn.aspx.cs">
+      <DependentUpon>CustomerReturn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\CustomerReturn.aspx.designer.cs">
+      <DependentUpon>CustomerReturn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\PermitRetesting.aspx.cs">
+      <DependentUpon>PermitRetesting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\PermitRetesting.aspx.designer.cs">
+      <DependentUpon>PermitRetesting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\ProcedureFlow\ProcedureList.aspx.cs">
+      <DependentUpon>ProcedureList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\ProcedureFlow\ProcedureList.aspx.designer.cs">
+      <DependentUpon>ProcedureList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\ProcedureFlow\processes\DealWithXMLData.aspx.cs">
+      <DependentUpon>DealWithXMLData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\ProcedureFlow\processes\DealWithXMLData.aspx.designer.cs">
+      <DependentUpon>DealWithXMLData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\ProcedureFlow\TestSoft.aspx.cs">
+      <DependentUpon>TestSoft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\ProcedureFlow\TestSoft.aspx.designer.cs">
+      <DependentUpon>TestSoft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\ProcedureTrace.aspx.cs">
+      <DependentUpon>ProcedureTrace.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\ProcedureTrace.aspx.designer.cs">
+      <DependentUpon>ProcedureTrace.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\RepairRecord.aspx.cs">
+      <DependentUpon>RepairRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProcedureManage\RepairRecord.aspx.designer.cs">
+      <DependentUpon>RepairRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProductManage\ProcedureScan.aspx.cs">
+      <DependentUpon>ProcedureScan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProductManage\ProcedureScan.aspx.designer.cs">
+      <DependentUpon>ProcedureScan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProductManage\BindProduct.aspx.cs">
+      <DependentUpon>BindProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProductManage\BindProduct.aspx.designer.cs">
+      <DependentUpon>BindProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProductManage\ComponentArchives.aspx.cs">
+      <DependentUpon>ComponentArchives.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProductManage\ComponentArchives.aspx.designer.cs">
+      <DependentUpon>ComponentArchives.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProductManage\InputProductSN.aspx.cs">
+      <DependentUpon>InputProductSN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProductManage\InputProductSN.aspx.designer.cs">
+      <DependentUpon>InputProductSN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProductManage\MatierialArchives.aspx.cs">
+      <DependentUpon>MatierialArchives.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProductManage\MatierialArchives.aspx.designer.cs">
+      <DependentUpon>MatierialArchives.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProductManage\ModelDetail.aspx.cs">
+      <DependentUpon>ModelDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProductManage\ModelDetail.aspx.designer.cs">
+      <DependentUpon>ModelDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProductManage\ModelList.aspx.cs">
+      <DependentUpon>ModelList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProductManage\ModelList.aspx.designer.cs">
+      <DependentUpon>ModelList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProductManage\ProductArchives.aspx.cs">
+      <DependentUpon>ProductArchives.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProductManage\ProductArchives.aspx.designer.cs">
+      <DependentUpon>ProductArchives.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProductManage\productStructure.aspx.cs">
+      <DependentUpon>productStructure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProductManage\productStructure.aspx.designer.cs">
+      <DependentUpon>productStructure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProductManage\ProductToEmpty.aspx.cs">
+      <DependentUpon>ProductToEmpty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProductManage\ProductToEmpty.aspx.designer.cs">
+      <DependentUpon>ProductToEmpty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProductManage\ProductTrace.aspx.cs">
+      <DependentUpon>ProductTrace.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProductManage\ProductTrace.aspx.designer.cs">
+      <DependentUpon>ProductTrace.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProductManage\ProductVersionUpdate.aspx.cs">
+      <DependentUpon>ProductVersionUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProductManage\ProductVersionUpdate.aspx.designer.cs">
+      <DependentUpon>ProductVersionUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ProductManage\QueryModel.aspx.cs">
+      <DependentUpon>QueryModel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ProductManage\QueryModel.aspx.designer.cs">
+      <DependentUpon>QueryModel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\QueryManage\BugPointStatistics.aspx.cs">
+      <DependentUpon>BugPointStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\QueryManage\BugPointStatistics.aspx.designer.cs">
+      <DependentUpon>BugPointStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\QueryManage\BugTypeStatistics.aspx.cs">
+      <DependentUpon>BugTypeStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\QueryManage\BugTypeStatistics.aspx.designer.cs">
+      <DependentUpon>BugTypeStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\QueryManage\DataDetail.aspx.cs">
+      <DependentUpon>DataDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\QueryManage\DataDetail.aspx.designer.cs">
+      <DependentUpon>DataDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\QueryManage\ProcedureData.aspx.cs">
+      <DependentUpon>ProcedureData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\QueryManage\ProcedureData.aspx.designer.cs">
+      <DependentUpon>ProcedureData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\QueryManage\ProduceBoard.aspx.cs">
+      <DependentUpon>ProduceBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\QueryManage\ProduceBoard.aspx.designer.cs">
+      <DependentUpon>ProduceBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\QueryManage\ProduceEfficiency.aspx.cs">
+      <DependentUpon>ProduceEfficiency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\QueryManage\ProduceEfficiency.aspx.designer.cs">
+      <DependentUpon>ProduceEfficiency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\QueryManage\ProduceFinished.aspx.cs">
+      <DependentUpon>ProduceFinished.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\QueryManage\ProduceFinished.aspx.designer.cs">
+      <DependentUpon>ProduceFinished.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\QueryManage\ProductQuality.aspx.cs">
+      <DependentUpon>ProductQuality.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\QueryManage\ProductQuality.aspx.designer.cs">
+      <DependentUpon>ProductQuality.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\QueryManage\RepairRecordInfo.aspx.cs">
+      <DependentUpon>RepairRecordInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\QueryManage\RepairRecordInfo.aspx.designer.cs">
+      <DependentUpon>RepairRecordInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\QueryManage\SingleProductInfo.aspx.cs">
+      <DependentUpon>SingleProductInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\QueryManage\SingleProductInfo.aspx.designer.cs">
+      <DependentUpon>SingleProductInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\SystemManage\BugPoint.aspx.cs">
+      <DependentUpon>BugPoint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\SystemManage\BugPoint.aspx.designer.cs">
+      <DependentUpon>BugPoint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\SystemManage\BugType.aspx.cs">
+      <DependentUpon>BugType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\SystemManage\BugType.aspx.designer.cs">
+      <DependentUpon>BugType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\SystemManage\EventPage.aspx.cs">
+      <DependentUpon>EventPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\SystemManage\EventPage.aspx.designer.cs">
+      <DependentUpon>EventPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\SystemManage\SoftwareVersion.aspx.cs">
+      <DependentUpon>SoftwareVersion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\SystemManage\SoftwareVersion.aspx.designer.cs">
+      <DependentUpon>SoftwareVersion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\LeftMenuItem.ascx.cs">
+      <DependentUpon>LeftMenuItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\LeftMenuItem.ascx.designer.cs">
+      <DependentUpon>LeftMenuItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Methods.cs" />
+    <Compile Include="Common\SessionUser.cs" />
+    <Compile Include="Common\ToExcelPage.aspx.cs">
+      <DependentUpon>ToExcelPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ToExcelPage.aspx.designer.cs">
+      <DependentUpon>ToExcelPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\LogManage\LogManager.cs" />
+    <Compile Include="DataAccess\LogManage\LogWriter.cs" />
+    <Compile Include="DataAccess\LogManage\WriterSqlParameters.cs" />
+    <Compile Include="DataAccess\SqlAccess.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\left.aspx.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\left.aspx.designer.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\top.aspx.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\top.aspx.designer.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSProcedureCtrl\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSProductTrace\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSSecurity\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="SuperAdminBase.cs">
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\close.psd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSProcedureCtrl\ProcedureCtrl.wsdl" />
+    <None Include="Web References\WSProcedureCtrl\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSProductTrace\ProductTrace.wsdl" />
+    <None Include="Web References\WSProductTrace\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSSecurity\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WSSecurity\Security.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:52867/iMCS/ProcedureCtrl.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSProcedureCtrl\</RelPath>
+      <UpdateFromURL>http://localhost:52867/iMCS/ProcedureCtrl.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MCSApp_WSProcedureCtrl_ProcedureCtrl</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost/iMCS/Security.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSSecurity\</RelPath>
+      <UpdateFromURL>http://localhost/iMCS/Security.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MCSApp_WSSecurity_Security</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:52867/iMCS/ProductTrace.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSProductTrace\</RelPath>
+      <UpdateFromURL>http://localhost:52867/iMCS/ProductTrace.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MCSApp_WSProductTrace_ProductTrace</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iMCS\iMCS.csproj">
+      <Project>{AC225DD8-1F61-44F2-9731-5A87DE2293D5}</Project>
+      <Name>iMCS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Application\ProcedureManage\ProcedureFlow\XiorkFlow\themes\default\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\Microsoft.WebApplication.targets" />
+  <!-- Import Project="E:\WebCode\Microsoft.WebApplication.targets" / -->
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2166</DevelopmentServerPort>
+          <DevelopmentServerVPath>/MCSApp/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

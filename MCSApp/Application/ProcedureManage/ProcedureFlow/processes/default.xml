@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkflowProcess>
+  <Activities>
+    <Activitie id="1" type="START_NODE" name="开始" xCoordinate="0" yCoordinate="100" width="80" height="30"></Activitie>
+    <Activitie id="2" type="NODE" name="节点1" xCoordinate="140" yCoordinate="100" width="80" height="30"></Activitie>
+    <Activitie id="3" type="FORK_NODE" name="分支" xCoordinate="280" yCoordinate="100" width="80" height="30"></Activitie>
+    <Activitie id="4" type="NODE" name="节点2" xCoordinate="397" yCoordinate="20" width="80" height="30"></Activitie>
+    <Activitie id="5" type="NODE" name="节点3" xCoordinate="540" yCoordinate="20" width="80" height="30"></Activitie>
+    <Activitie id="6" type="NODE" name="节点4" xCoordinate="460" yCoordinate="100" width="80" height="30"></Activitie>
+    <Activitie id="7" type="NODE" name="节点5" xCoordinate="540" yCoordinate="170" width="80" height="30"></Activitie>
+    <Activitie id="8" type="JOIN_NODE" name="汇聚" xCoordinate="660" yCoordinate="90" width="80" height="30"></Activitie>
+    <Activitie id="9" type="NODE" name="节点6" xCoordinate="660" yCoordinate="270" width="80" height="30"></Activitie>
+    <Activitie id="10" type="NODE" name="节点7" xCoordinate="520" yCoordinate="270" width="80" height="30"></Activitie>
+    <Activitie id="11" type="END_NODE" name="结束" xCoordinate="380" yCoordinate="270" width="80" height="30"></Activitie>
+  </Activities>
+  <Transitions>
+    <Transition id="12" name="连接" from="1" to="2"></Transition>
+    <Transition id="13" name="" from="2" to="3"></Transition>
+    <Transition id="14" name="" from="3" to="4"></Transition>
+    <Transition id="15" name="" from="4" to="5"></Transition>
+    <Transition id="16" name="" from="5" to="8"></Transition>
+    <Transition id="17" name="" from="3" to="6"></Transition>
+    <Transition id="18" name="" from="6" to="8"></Transition>
+    <Transition id="19" name="" from="3" to="7"></Transition>
+    <Transition id="20" name="" from="7" to="8"></Transition>
+    <Transition id="21" name="连接" from="8" to="9"></Transition>
+    <Transition id="22" name="" from="9" to="10"></Transition>
+    <Transition id="23" name="连接" from="10" to="11"></Transition>
+  </Transitions>
+</WorkflowProcess>
+
